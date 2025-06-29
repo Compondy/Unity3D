@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2804584581500567613
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1589981833694371981, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_Name
+      value: CubeBlack
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874841410651770479, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4480fc439e078040a78e6c5b2b6bc43, type: 2}
+    - target: {fileID: 7611176900519071389, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611176900519071389, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611176900519071389, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611176900519071389, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611176900519071389, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611176900519071389, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611176900519071389, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611176900519071389, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611176900519071389, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611176900519071389, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -6892187056162685055, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1589981833694371981, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -599885682984082812}
+  m_SourcePrefab: {fileID: 100100000, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+--- !u!1 &3529453065395265712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1589981833694371981, guid: 70a155c36b73e6443adf0565655375f3, type: 3}
+  m_PrefabInstance: {fileID: 2804584581500567613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-599885682984082812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3529453065395265712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a7082d27e51634fbe9fb12fdb868cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverMaterial: {fileID: 2100000, guid: 428486533bac1e44a8456492d4732667, type: 2}
+  hoverBlueMaterial: {fileID: 2100000, guid: 67f6c8af466b3784c8ef5e686e6820b0, type: 2}
+  redMaterial: {fileID: 2100000, guid: f26b296c343a6d24a8987c03a7caa4ad, type: 2}
+  whiteMaterial: {fileID: 2100000, guid: cb4589a55b649ad4b8ef76b0ef832c8d, type: 2}
+  selectMaterial: {fileID: 2100000, guid: aeff39b932c8ddb4d80913bb6810e9de, type: 2}

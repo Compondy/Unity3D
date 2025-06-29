@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ad9972aad3b51ad46abcfaffd038e403
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - redCheckerImage: {fileID: 21300000, guid: 56a2c23767e38574e99fdf16c8fe31d6, type: 3}
+  - whiteCheckerImage: {fileID: 21300000, guid: c1e86eabcd413a7458a85451fd756dc1, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

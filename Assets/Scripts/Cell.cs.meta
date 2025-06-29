@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f8a7082d27e51634fbe9fb12fdb868cf
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hoverMaterial: {fileID: 2100000, guid: 428486533bac1e44a8456492d4732667, type: 2}
+  - hoverBlueMaterial: {fileID: 2100000, guid: 67f6c8af466b3784c8ef5e686e6820b0, type: 2}
+  - redMaterial: {fileID: 2100000, guid: f26b296c343a6d24a8987c03a7caa4ad, type: 2}
+  - whiteMaterial: {fileID: 2100000, guid: cb4589a55b649ad4b8ef76b0ef832c8d, type: 2}
+  - selectMaterial: {fileID: 2100000, guid: aeff39b932c8ddb4d80913bb6810e9de, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

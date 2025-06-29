@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b459362cac4feb14fbea1ecd33f11af3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - redCheckerPrefab: {fileID: 8783975992231280290, guid: e6c3210db367ee141a9d3bc9310d40f3, type: 3}
+  - whiteCheckerPrefab: {fileID: 1576036713093493327, guid: a059e9e3058c0fe4cae8ccd49f8c43b2, type: 3}
+  - redQueenCheckerPrefab: {fileID: 6171272553074984832, guid: 161db5e515e71d64f864ca5743af0375, type: 3}
+  - whiteQueenCheckerPrefab: {fileID: 5060395148520677218, guid: 02c655bda14ddb242a76ccf60e37a4b8, type: 3}
+  - whiteCheckerImage: {fileID: 21300000, guid: c1e86eabcd413a7458a85451fd756dc1, type: 3}
+  - redCheckerImage: {fileID: 21300000, guid: 56a2c23767e38574e99fdf16c8fe31d6, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
