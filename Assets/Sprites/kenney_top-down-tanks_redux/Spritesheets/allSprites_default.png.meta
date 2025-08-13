@@ -1,0 +1,4228 @@
+fileFormatVersion: 2
+guid: e3b60c4f3eea92b4c999aec55cad1d55
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: barrelBlack_side.png
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 130
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e7c17201deef5e0800000000000000
+      internalID: -1873799741308109229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrelBlack_top.png
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 26
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186f8085e03d0f9d0800000000000000
+      internalID: -2742460114508646783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrelGreen_side.png
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 218
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f297378d6a2e52540800000000000000
+      internalID: 4982637768979216687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrelGreen_top.png
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 98
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f688fb281798d80800000000000000
+      internalID: -8247936436179275923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrelRed_side.png
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 166
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a01ac606373853d60800000000000000
+      internalID: 7869340455462019338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrelRed_top.png
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 50
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f067c8af3dee930800000000000000
+      internalID: 4174506977670860623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrelRust_side.png
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 497
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8901606bec7a9720800000000000000
+      internalID: 2853730664268761484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrelRust_top.png
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 74
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e345f96fee2ae5960800000000000000
+      internalID: 7592685169016788030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barricadeMetal.png
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 38
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7df52231b57afe30800000000000000
+      internalID: 4538068978440207739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barricadeWood.png
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 10
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33579d4bb98bcc90800000000000000
+      internalID: -7148468545966877894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletBlue1.png
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 0
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51fbcde50621d950800000000000000
+      internalID: 6471995946414371166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletBlue1_outline.png
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 525
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff24f9be85c7b030800000000000000
+      internalID: 3510491651354406898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletBlue2.png
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 505
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5b5294b32b3a840800000000000000
+      internalID: 5234223159634671059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletBlue2_outline.png
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 94
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d733c631d37dea600800000000000000
+      internalID: 481558867494056829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletBlue3.png
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 421
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05b5dc4325af5140800000000000000
+      internalID: 4710665306284340492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletBlue3_outline.png
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 345
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941b7ad08ec494150800000000000000
+      internalID: 5857297349917258057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletDark1.png
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 162
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9808afac4390ba230800000000000000
+      internalID: 3651022045262282889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletDark1_outline.png
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 96
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56b87f825e76ff70800000000000000
+      internalID: 9220696180147140187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletDark2.png
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 98
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ad2861407dbd770800000000000000
+      internalID: 8636733122970573468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletDark2_outline.png
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 5
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22037f5ea1ae6ee0800000000000000
+      internalID: -1265896674946776534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletDark3.png
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 320
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c1bd0b37c8bc150800000000000000
+      internalID: 5893958965860703367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletDark3_outline.png
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 30
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2ac79b660481620800000000000000
+      internalID: 2745014782825112256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletGreen1.png
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 310
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0938c0faf3514390800000000000000
+      internalID: -7835889539401369330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletGreen1_outline.png
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 391
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b1c2457d6262430800000000000000
+      internalID: 3757733645359258496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletGreen2.png
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 351
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02414674535c9060800000000000000
+      internalID: 6961530746234290699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletGreen2_outline.png
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 5
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921e26809daa72c30800000000000000
+      internalID: 4334621015492714793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletGreen3.png
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 268
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301e3091a91017ea0800000000000000
+      internalID: -5876914277385510653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletGreen3_outline.png
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 417
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10c56a2de8f432f0800000000000000
+      internalID: -993895920239788005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletRed1.png
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 162
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d84971263ab90c0800000000000000
+      internalID: -4567877755339502261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletRed1_outline.png
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf8f13f7093eb59a0800000000000000
+      internalID: -6243146248670283524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletRed2.png
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10279c80a715cbb0800000000000000
+      internalID: -4916497439884107749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletRed2_outline.png
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 5
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1c19f04fcebeb10800000000000000
+      internalID: 2011962191528444350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletRed3.png
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 23
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e92c4cc454902ba0800000000000000
+      internalID: -6115725202043426330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletRed3_outline.png
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 417
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4af5f96f61a472a0800000000000000
+      internalID: -6740585242375620020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletSand1.png
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ecb33ce2d8ba890800000000000000
+      internalID: -7445702326943494502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletSand1_outline.png
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5f57a12dfcfbf40800000000000000
+      internalID: 5746540150842062296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletSand2.png
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d259ac857cd4a6d0800000000000000
+      internalID: -2980014655983234352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletSand2_outline.png
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 94
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cdb9d1aa42b3ee80800000000000000
+      internalID: -8150474866997740094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletSand3.png
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 254
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0d411dbf9d423f0800000000000000
+      internalID: -926375947763658542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulletSand3_outline.png
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 417
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a335b4b831fee2b0800000000000000
+      internalID: -5553236064649006168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crateMetal.png
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 66
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6047a3021282550800000000000000
+      internalID: 6136190914595653325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crateMetal_side.png
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 94
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b132b161762a09780800000000000000
+      internalID: -8678257918306737381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crateWood.png
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 316
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ac5462d50fb2ed0800000000000000
+      internalID: -2437590490426258921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crateWood_side.png
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cf8bda2d23a50f0800000000000000
+      internalID: -1127532876263785376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion1.png
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 102
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a70611902f7a2d30800000000000000
+      internalID: 4407474963185272740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion2.png
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 38
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc0949954c7bb6b0800000000000000
+      internalID: -5279489499795485491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion3.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ac989540a033a10800000000000000
+      internalID: 1887863682596719256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion4.png
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 416
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582bb7239be4eda40800000000000000
+      internalID: 5394835960959316613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion5.png
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff35b2e752b1b380800000000000000
+      internalID: -8957182093327777805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionSmoke1.png
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 42
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2f83b3aca99dba0800000000000000
+      internalID: -6063645229910002952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionSmoke2.png
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 254
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1b90d1feaf1f430800000000000000
+      internalID: 3815106264250823130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionSmoke3.png
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 310
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bba3f9241d55140800000000000000
+      internalID: 4707899069555194772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionSmoke4.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 416
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffff50f3112762e0800000000000000
+      internalID: -2132699529015721992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionSmoke5.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fb09ff9902ee880800000000000000
+      internalID: -8579884394304454809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fenceRed.png
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 21
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341cabae925557d10800000000000000
+      internalID: 2122696437895184707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fenceYellow.png
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 37
+        width: 52
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37b1b43bf8d94b40800000000000000
+      internalID: 5425105799576926011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oilSpill_large.png
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 3
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d659621cbe8110e0800000000000000
+      internalID: -2300900996195723567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oilSpill_small.png
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 7
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec65458766dc40240800000000000000
+      internalID: 4757152946399237838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandbagBeige.png
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 172
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc952ffefc048e830800000000000000
+      internalID: 4100598722548881869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandbagBeige_open.png
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 10
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065f1603ace5599b0800000000000000
+      internalID: -5074045182674864800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandbagBrown.png
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 260
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb1ae8285ea95180800000000000000
+      internalID: -9126071476222813189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandbagBrown_open.png
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 14
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10881d205f5a2b50800000000000000
+      internalID: 6569167804431892506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotLarge.png
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec87d7d77ffacb5c0800000000000000
+      internalID: -4198287275118987058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotOrange.png
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 248
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace2931f887041090800000000000000
+      internalID: -8064812747969712438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotRed.png
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 306
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fed503dfd120deb0800000000000000
+      internalID: -4697217166145626381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotThin.png
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 379
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36968f510674ca5c0800000000000000
+      internalID: -4202905874232481437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel1.png
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 543
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df2d7fd805459480800000000000000
+      internalID: -8893125984761598000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel1_outline.png
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 0
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50a496209c5f5510800000000000000
+      internalID: 1540051371776319580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel2.png
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 433
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ead4aa7408c77500800000000000000
+      internalID: 394003413981256424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel2_outline.png
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 363
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c9c57f838a0b1b0800000000000000
+      internalID: -5642825370473554875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel3.png
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 405
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad7533d54782b650800000000000000
+      internalID: 6247204367082290593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel3_outline.png
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 289
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d955b4722dc0d3130800000000000000
+      internalID: 3548006178179732893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel4.png
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 289
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d5d4e47280efee0800000000000000
+      internalID: -1225533083687756535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel4_outline.png
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 253
+        width: 14
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b13e290ebdd3c20800000000000000
+      internalID: 3187945868831693589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel5.png
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 104
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3981413e26fea0e0800000000000000
+      internalID: -2256595685010732740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel5_outline.png
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 437
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db970bc3ddee7d1d0800000000000000
+      internalID: -3325927165816440387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel6.png
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 263
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c17612600b7a48b0800000000000000
+      internalID: -5167182380878368319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel6_outline.png
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 223
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d638484b42db600800000000000000
+      internalID: 485584692561800520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel7.png
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 539
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c7b194b864ea3a0800000000000000
+      internalID: -6652302035538707336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: specialBarrel7_outline.png
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 467
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c051230a7992434c0800000000000000
+      internalID: -4308773212282284788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBlue_barrel1.png
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 78
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d735772652f4850800000000000000
+      internalID: 6363345903336783237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBlue_barrel1_outline.png
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 276
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb0d3e08d8c5c410800000000000000
+      internalID: 1496823281447930862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBlue_barrel2.png
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 237
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dbc404792ab9f910800000000000000
+      internalID: 1871731807352048592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBlue_barrel2_outline.png
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 487
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d51e7efd54ad1a10800000000000000
+      internalID: 1881840942919325139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBlue_barrel3.png
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 20
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015672e35deec3630800000000000000
+      internalID: 3908261176288961808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBlue_barrel3_outline.png
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 76
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07837ad6f9cfd9a90800000000000000
+      internalID: -7305405258855401360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_bigRed.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 461
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efa8bbb04b593630800000000000000
+      internalID: 3907254485306093545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_bigRed_outline.png
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00be2de329f502b10800000000000000
+      internalID: 1954667320002669312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_blue.png
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf6af554d1993d60800000000000000
+      internalID: 7870482164968222663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_blue_outline.png
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 374
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c798115b939fab820800000000000000
+      internalID: 2934932133431576956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_dark.png
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 380
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d7aee754935d1d0800000000000000
+      internalID: -3326689779098419857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_darkLarge.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 509
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dffa759000cd4c6b0800000000000000
+      internalID: -5276850970656526339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_darkLarge_outline.png
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 194
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5280987a5e8fb3870800000000000000
+      internalID: 8663791973419255845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_dark_outline.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 376
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789548a105f3d8a40800000000000000
+      internalID: 5372019543797684615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_green.png
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 246
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af25ee3fa0b11e2b0800000000000000
+      internalID: -5557130731342376198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_green_outline.png
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 334
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77413e47d85666040800000000000000
+      internalID: 4640508124277707895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_huge.png
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 94
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac7772908d5cda30800000000000000
+      internalID: 4241367755870665896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_huge_outline.png
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 162
+        width: 62
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a983fc4fcdb079320800000000000000
+      internalID: 2564531556438718618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_red.png
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 122
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 427cb6984acc97560800000000000000
+      internalID: 7312100477064955684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_red_outline.png
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 525
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2a8bcf160a8b980800000000000000
+      internalID: -8522885952086433072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_sand.png
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 435
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d85968c3b963c80800000000000000
+      internalID: -8343310575398974143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankBody_sand_outline.png
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 8
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a533abda00bb0a0800000000000000
+      internalID: -6864892460842919357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankDark_barrel1.png
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 197
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0697a5f5a9d84b740800000000000000
+      internalID: 5166910366665046368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankDark_barrel1_outline.png
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 467
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dfa85ca47fb024c0800000000000000
+      internalID: -4314237935192330281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankDark_barrel2.png
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 141
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d1630aaf5b203b0800000000000000
+      internalID: -5547671702932677222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankDark_barrel2_outline.png
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 162
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491d50f19a294c9e0800000000000000
+      internalID: -1601994312369450604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankDark_barrel3.png
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 20
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3737591490788be0800000000000000
+      internalID: -1474805096581220547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankDark_barrel3_outline.png
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 106
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56e1a28f534c7cd0800000000000000
+      internalID: -2559096410760681891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankGreen_barrel1.png
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 136
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dde06e1da27c1280800000000000000
+      internalID: -9071249461566444075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankGreen_barrel1_outline.png
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 158
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4893af4f3b5b24f30800000000000000
+      internalID: 4558405557366176132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankGreen_barrel2.png
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 141
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9106db95e9a097e0800000000000000
+      internalID: -1760720650674765410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankGreen_barrel2_outline.png
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 437
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b78077cbcb0fc490800000000000000
+      internalID: -7723941866064803920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankGreen_barrel3.png
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 263
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ac4e260f878fca0800000000000000
+      internalID: -5982899131115058558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankGreen_barrel3_outline.png
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 48
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da7f774fce8a09c0800000000000000
+      internalID: -3960195901410018602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankRed_barrel1.png
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 192
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62cfe030ad9d46dc0800000000000000
+      internalID: -3646550267885847514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankRed_barrel1_outline.png
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 535
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77182ee26ac1548a0800000000000000
+      internalID: -6321615001867878025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankRed_barrel2.png
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 327
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc98db80426eaf50800000000000000
+      internalID: 6894556108914465999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankRed_barrel2_outline.png
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 167
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e2a762a9eefaa40800000000000000
+      internalID: 5381782425568947816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankRed_barrel3.png
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 237
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fecddf1800932b50800000000000000
+      internalID: 6567251046205083379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankRed_barrel3_outline.png
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 407
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5ae8c6019aa6c00800000000000000
+      internalID: 894713363992323562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankSand_barrel1.png
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 517
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657646f2841727e00800000000000000
+      internalID: 1041019018722699094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankSand_barrel1_outline.png
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 188
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39233f9eec7d97eb0800000000000000
+      internalID: -4721505450632990061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankSand_barrel2.png
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 353
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80ec1ee6ac871d50800000000000000
+      internalID: 6707984818578972812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankSand_barrel2_outline.png
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 457
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3daa87c478f56520800000000000000
+      internalID: 2694833132498758970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankSand_barrel3.png
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 539
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7441e2e8636e83d0800000000000000
+      internalID: -3202512982879681409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tankSand_barrel3_outline.png
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 46
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a551c73a516639090800000000000000
+      internalID: -8028961467548297894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tank_bigRed.png
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a19bc70cf80c6f30800000000000000
+      internalID: 4570037600429773219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tank_blue.png
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 471
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73bbfee969ae1d50800000000000000
+      internalID: 6709986767274750844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tank_dark.png
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 208
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e35e05e33c8ccb0800000000000000
+      internalID: -4843406726824378846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tank_darkLarge.png
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 313
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6034e56186ac8180800000000000000
+      internalID: -9111724871386910612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tank_green.png
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 162
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d94b99c63db3bdb0800000000000000
+      internalID: -4777266736701683244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tank_huge.png
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 234
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d8d6367ed556e90800000000000000
+      internalID: -7033111994682208990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tank_red.png
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 471
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67eeb883992560190800000000000000
+      internalID: -7996613270317568394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tank_sand.png
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 48
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a326e8a9322e5d30800000000000000
+      internalID: 4422009515166540709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass1.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 117
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14588ae7aeeb492b0800000000000000
+      internalID: -5578624124048603839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass2.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 181
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af7a5bb9f26edc50800000000000000
+      internalID: 6691894921048784805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadCornerLL.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 181
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e197f7949ea67920800000000000000
+      internalID: 2987767356034879972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadCornerLR.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 117
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027fa37c215a3fc00800000000000000
+      internalID: 933271047866349344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadCornerUL.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 437
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f5ab3a97fff9ee0800000000000000
+      internalID: -1252001273482682624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadCornerUR.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 245
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647ee1fe9584eb6f0800000000000000
+      internalID: -667016143703185594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadCrossing.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 182
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee6836b085f16880800000000000000
+      internalID: -8619338278648647956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadCrossingRound.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 501
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c304c9ebd08feefc0800000000000000
+      internalID: -3463558325485158340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadEast.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 373
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65fbf2c7260ec6d10800000000000000
+      internalID: 2120316238179581782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadNorth.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 309
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1044687150a9989e0800000000000000
+      internalID: -1618593244402793471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadSplitE.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 437
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281bd768b70e6db40800000000000000
+      internalID: 5464802019002659202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadSplitN.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 373
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c035ca9bdf54da0800000000000000
+      internalID: -5961079557853082489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadSplitS.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 437
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e23814affbcd4550800000000000000
+      internalID: 6146793365260743398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadSplitW.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 245
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c68218dcdd42a10800000000000000
+      internalID: 1883874418852654185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadTransitionE.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 501
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb7e3f6382c6ad10800000000000000
+      internalID: 2136608942996749283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadTransitionE_dirt.png
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 437
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c0a05bfa681ef00800000000000000
+      internalID: 1144343869543549969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadTransitionN.png
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 501
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ddbb4a4d294cfa0800000000000000
+      internalID: -5781334579642376844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadTransitionN_dirt.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 53
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c72321741a5c2270800000000000000
+      internalID: 8227049663143028675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadTransitionS.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 117
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453be76cd5e436f40800000000000000
+      internalID: 5720502116359779156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadTransitionS_dirt.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 181
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b291f1cea3dfcec0800000000000000
+      internalID: -3544381634185686345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadTransitionW.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 245
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa1a61d6d2d0481b0800000000000000
+      internalID: -5655380743315611217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_roadTransitionW_dirt.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 309
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4f1b679f0125810800000000000000
+      internalID: 1752481868624819445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_transitionE.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 373
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0eb69c1f34d084c0800000000000000
+      internalID: -4287193477729042932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_transitionN.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 437
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e71944aed8dad40800000000000000
+      internalID: 5597285949203643918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_transitionS.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 501
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00489dc63a782cd20800000000000000
+      internalID: 3297347013164237824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileGrass_transitionW.png
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 53
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf944724c7c22ba30800000000000000
+      internalID: 4229491912256801276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand1.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 501
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218eee043b34a0ea0800000000000000
+      internalID: -5905833524175378414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand2.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 53
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857c3209a60a1b650800000000000000
+      internalID: 6246950537684830040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadCornerLL.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 246
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e78521caf1de5d0800000000000000
+      internalID: -3031732150247850493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadCornerLR.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441e64cf643a31d30800000000000000
+      internalID: 4401040786146648388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadCornerUL.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 501
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dffe1758a9c80e290800000000000000
+      internalID: -7863130354097197059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadCornerUR.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 118
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5771b8a5105cbe50800000000000000
+      internalID: 6826419189141567327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadCrossing.png
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 373
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a797e2400ca10f0800000000000000
+      internalID: -1145392031020254576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadCrossingRound.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 53
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87804b57b21b5fe00800000000000000
+      internalID: 1077962486041544824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadEast.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 117
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689b746ea114b8210800000000000000
+      internalID: 1336233298233899398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadNorth.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 181
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aeb019cb23388220800000000000000
+      internalID: 2488295057272127138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadSplitE.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 245
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24745775c023fc4b0800000000000000
+      internalID: -5418056798115117246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadSplitN.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 309
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd33451fa87be720800000000000000
+      internalID: 2876525480377531834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadSplitS.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 373
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6348e780d3bf7b30800000000000000
+      internalID: 4287343078494716783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileSand_roadSplitW.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 437
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b51fe0d7ab3a5790800000000000000
+      internalID: -7540649034127567436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tracksDouble.png
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 110
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125b21ff0fbda3610800000000000000
+      internalID: 1601834445601682721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tracksLarge.png
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 282
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4947aedb7e1b8e0800000000000000
+      internalID: -1679306383164140350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tracksSmall.png
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 194
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de662102a702b910800000000000000
+      internalID: 1851550789188087507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treeBrown_large.png
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 309
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf4f8314a3c699c0800000000000000
+      internalID: -3920731316109226053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treeBrown_leaf.png
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 43
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a351f2c41ff68f0800000000000000
+      internalID: -544951720378811788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treeBrown_small.png
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 158
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d45bbd1e7b1775b0800000000000000
+      internalID: -5370793802137381677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treeBrown_twigs.png
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 413
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4b75b2ed98c4ec0800000000000000
+      internalID: -3581336016363473693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treeGreen_large.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32225c4cb896edd0800000000000000
+      internalID: -2457108612182302147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treeGreen_leaf.png
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b137a0f849b0030800000000000000
+      internalID: 3462024080640908073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treeGreen_small.png
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 344
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a464b89003d00b880800000000000000
+      internalID: -8597357188680563126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treeGreen_twigs.png
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 391
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc7e7eb892c78640800000000000000
+      internalID: 5082244665797672138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wireCrooked.png
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 517
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce773ee6365e5460800000000000000
+      internalID: 7232312845528432329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wireStraight.png
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 321
+        width: 17
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2ba01f102dbe840800000000000000
+      internalID: 5254524296038626002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      barrelBlack_side.png: -1873799741308109229
+      barrelBlack_top.png: -2742460114508646783
+      barrelGreen_side.png: 4982637768979216687
+      barrelGreen_top.png: -8247936436179275923
+      barrelRed_side.png: 7869340455462019338
+      barrelRed_top.png: 4174506977670860623
+      barrelRust_side.png: 2853730664268761484
+      barrelRust_top.png: 7592685169016788030
+      barricadeMetal.png: 4538068978440207739
+      barricadeWood.png: -7148468545966877894
+      bulletBlue1.png: 6471995946414371166
+      bulletBlue1_outline.png: 3510491651354406898
+      bulletBlue2.png: 5234223159634671059
+      bulletBlue2_outline.png: 481558867494056829
+      bulletBlue3.png: 4710665306284340492
+      bulletBlue3_outline.png: 5857297349917258057
+      bulletDark1.png: 3651022045262282889
+      bulletDark1_outline.png: 9220696180147140187
+      bulletDark2.png: 8636733122970573468
+      bulletDark2_outline.png: -1265896674946776534
+      bulletDark3.png: 5893958965860703367
+      bulletDark3_outline.png: 2745014782825112256
+      bulletGreen1.png: -7835889539401369330
+      bulletGreen1_outline.png: 3757733645359258496
+      bulletGreen2.png: 6961530746234290699
+      bulletGreen2_outline.png: 4334621015492714793
+      bulletGreen3.png: -5876914277385510653
+      bulletGreen3_outline.png: -993895920239788005
+      bulletRed1.png: -4567877755339502261
+      bulletRed1_outline.png: -6243146248670283524
+      bulletRed2.png: -4916497439884107749
+      bulletRed2_outline.png: 2011962191528444350
+      bulletRed3.png: -6115725202043426330
+      bulletRed3_outline.png: -6740585242375620020
+      bulletSand1.png: -7445702326943494502
+      bulletSand1_outline.png: 5746540150842062296
+      bulletSand2.png: -2980014655983234352
+      bulletSand2_outline.png: -8150474866997740094
+      bulletSand3.png: -926375947763658542
+      bulletSand3_outline.png: -5553236064649006168
+      crateMetal.png: 6136190914595653325
+      crateMetal_side.png: -8678257918306737381
+      crateWood.png: -2437590490426258921
+      crateWood_side.png: -1127532876263785376
+      explosion1.png: 4407474963185272740
+      explosion2.png: -5279489499795485491
+      explosion3.png: 1887863682596719256
+      explosion4.png: 5394835960959316613
+      explosion5.png: -8957182093327777805
+      explosionSmoke1.png: -6063645229910002952
+      explosionSmoke2.png: 3815106264250823130
+      explosionSmoke3.png: 4707899069555194772
+      explosionSmoke4.png: -2132699529015721992
+      explosionSmoke5.png: -8579884394304454809
+      fenceRed.png: 2122696437895184707
+      fenceYellow.png: 5425105799576926011
+      oilSpill_large.png: -2300900996195723567
+      oilSpill_small.png: 4757152946399237838
+      sandbagBeige.png: 4100598722548881869
+      sandbagBeige_open.png: -5074045182674864800
+      sandbagBrown.png: -9126071476222813189
+      sandbagBrown_open.png: 6569167804431892506
+      shotLarge.png: -4198287275118987058
+      shotOrange.png: -8064812747969712438
+      shotRed.png: -4697217166145626381
+      shotThin.png: -4202905874232481437
+      specialBarrel1.png: -8893125984761598000
+      specialBarrel1_outline.png: 1540051371776319580
+      specialBarrel2.png: 394003413981256424
+      specialBarrel2_outline.png: -5642825370473554875
+      specialBarrel3.png: 6247204367082290593
+      specialBarrel3_outline.png: 3548006178179732893
+      specialBarrel4.png: -1225533083687756535
+      specialBarrel4_outline.png: 3187945868831693589
+      specialBarrel5.png: -2256595685010732740
+      specialBarrel5_outline.png: -3325927165816440387
+      specialBarrel6.png: -5167182380878368319
+      specialBarrel6_outline.png: 485584692561800520
+      specialBarrel7.png: -6652302035538707336
+      specialBarrel7_outline.png: -4308773212282284788
+      tankBlue_barrel1.png: 6363345903336783237
+      tankBlue_barrel1_outline.png: 1496823281447930862
+      tankBlue_barrel2.png: 1871731807352048592
+      tankBlue_barrel2_outline.png: 1881840942919325139
+      tankBlue_barrel3.png: 3908261176288961808
+      tankBlue_barrel3_outline.png: -7305405258855401360
+      tankBody_bigRed.png: 3907254485306093545
+      tankBody_bigRed_outline.png: 1954667320002669312
+      tankBody_blue.png: 7870482164968222663
+      tankBody_blue_outline.png: 2934932133431576956
+      tankBody_dark.png: -3326689779098419857
+      tankBody_darkLarge.png: -5276850970656526339
+      tankBody_darkLarge_outline.png: 8663791973419255845
+      tankBody_dark_outline.png: 5372019543797684615
+      tankBody_green.png: -5557130731342376198
+      tankBody_green_outline.png: 4640508124277707895
+      tankBody_huge.png: 4241367755870665896
+      tankBody_huge_outline.png: 2564531556438718618
+      tankBody_red.png: 7312100477064955684
+      tankBody_red_outline.png: -8522885952086433072
+      tankBody_sand.png: -8343310575398974143
+      tankBody_sand_outline.png: -6864892460842919357
+      tankDark_barrel1.png: 5166910366665046368
+      tankDark_barrel1_outline.png: -4314237935192330281
+      tankDark_barrel2.png: -5547671702932677222
+      tankDark_barrel2_outline.png: -1601994312369450604
+      tankDark_barrel3.png: -1474805096581220547
+      tankDark_barrel3_outline.png: -2559096410760681891
+      tankGreen_barrel1.png: -9071249461566444075
+      tankGreen_barrel1_outline.png: 4558405557366176132
+      tankGreen_barrel2.png: -1760720650674765410
+      tankGreen_barrel2_outline.png: -7723941866064803920
+      tankGreen_barrel3.png: -5982899131115058558
+      tankGreen_barrel3_outline.png: -3960195901410018602
+      tankRed_barrel1.png: -3646550267885847514
+      tankRed_barrel1_outline.png: -6321615001867878025
+      tankRed_barrel2.png: 6894556108914465999
+      tankRed_barrel2_outline.png: 5381782425568947816
+      tankRed_barrel3.png: 6567251046205083379
+      tankRed_barrel3_outline.png: 894713363992323562
+      tankSand_barrel1.png: 1041019018722699094
+      tankSand_barrel1_outline.png: -4721505450632990061
+      tankSand_barrel2.png: 6707984818578972812
+      tankSand_barrel2_outline.png: 2694833132498758970
+      tankSand_barrel3.png: -3202512982879681409
+      tankSand_barrel3_outline.png: -8028961467548297894
+      tank_bigRed.png: 4570037600429773219
+      tank_blue.png: 6709986767274750844
+      tank_dark.png: -4843406726824378846
+      tank_darkLarge.png: -9111724871386910612
+      tank_green.png: -4777266736701683244
+      tank_huge.png: -7033111994682208990
+      tank_red.png: -7996613270317568394
+      tank_sand.png: 4422009515166540709
+      tileGrass1.png: -5578624124048603839
+      tileGrass2.png: 6691894921048784805
+      tileGrass_roadCornerLL.png: 2987767356034879972
+      tileGrass_roadCornerLR.png: 933271047866349344
+      tileGrass_roadCornerUL.png: -1252001273482682624
+      tileGrass_roadCornerUR.png: -667016143703185594
+      tileGrass_roadCrossing.png: -8619338278648647956
+      tileGrass_roadCrossingRound.png: -3463558325485158340
+      tileGrass_roadEast.png: 2120316238179581782
+      tileGrass_roadNorth.png: -1618593244402793471
+      tileGrass_roadSplitE.png: 5464802019002659202
+      tileGrass_roadSplitN.png: -5961079557853082489
+      tileGrass_roadSplitS.png: 6146793365260743398
+      tileGrass_roadSplitW.png: 1883874418852654185
+      tileGrass_roadTransitionE.png: 2136608942996749283
+      tileGrass_roadTransitionE_dirt.png: 1144343869543549969
+      tileGrass_roadTransitionN.png: -5781334579642376844
+      tileGrass_roadTransitionN_dirt.png: 8227049663143028675
+      tileGrass_roadTransitionS.png: 5720502116359779156
+      tileGrass_roadTransitionS_dirt.png: -3544381634185686345
+      tileGrass_roadTransitionW.png: -5655380743315611217
+      tileGrass_roadTransitionW_dirt.png: 1752481868624819445
+      tileGrass_transitionE.png: -4287193477729042932
+      tileGrass_transitionN.png: 5597285949203643918
+      tileGrass_transitionS.png: 3297347013164237824
+      tileGrass_transitionW.png: 4229491912256801276
+      tileSand1.png: -5905833524175378414
+      tileSand2.png: 6246950537684830040
+      tileSand_roadCornerLL.png: -3031732150247850493
+      tileSand_roadCornerLR.png: 4401040786146648388
+      tileSand_roadCornerUL.png: -7863130354097197059
+      tileSand_roadCornerUR.png: 6826419189141567327
+      tileSand_roadCrossing.png: -1145392031020254576
+      tileSand_roadCrossingRound.png: 1077962486041544824
+      tileSand_roadEast.png: 1336233298233899398
+      tileSand_roadNorth.png: 2488295057272127138
+      tileSand_roadSplitE.png: -5418056798115117246
+      tileSand_roadSplitN.png: 2876525480377531834
+      tileSand_roadSplitS.png: 4287343078494716783
+      tileSand_roadSplitW.png: -7540649034127567436
+      tracksDouble.png: 1601834445601682721
+      tracksLarge.png: -1679306383164140350
+      tracksSmall.png: 1851550789188087507
+      treeBrown_large.png: -3920731316109226053
+      treeBrown_leaf.png: -544951720378811788
+      treeBrown_small.png: -5370793802137381677
+      treeBrown_twigs.png: -3581336016363473693
+      treeGreen_large.png: -2457108612182302147
+      treeGreen_leaf.png: 3462024080640908073
+      treeGreen_small.png: -8597357188680563126
+      treeGreen_twigs.png: 5082244665797672138
+      wireCrooked.png: 7232312845528432329
+      wireStraight.png: 5254524296038626002
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2578 @@
+fileFormatVersion: 2
+guid: ceda7b006c533ea4f8bb423f17cf7df2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: platformIndustrial_001.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace8900b817ca98d0800000000000000
+      internalID: -2838737706257117494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_002.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9708bbedd7161fc10800000000000000
+      internalID: 2085555295684886649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_003.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 580
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0c9fe790bba4890800000000000000
+      internalID: -7472954982208519972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_004.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 440
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce5e3d07fff50f90800000000000000
+      internalID: -6987897810251260213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_005.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 866
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fc97e212f657c20800000000000000
+      internalID: 3203588898248314627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_006.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 726
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186358f16d9f0f8f0800000000000000
+      internalID: -508632059845724543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_007.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 360
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc2bf91bfb81ae00800000000000000
+      internalID: 1054277698370350325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_008.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 100
+        width: 140
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30dad9b9f9bc1e4c0800000000000000
+      internalID: -4259899886144738045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_009.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 500
+        width: 140
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cc70c007b17d490800000000000000
+      internalID: -7721672868051301349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_010.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e612a25381f01d3c0800000000000000
+      internalID: -4336668369535491730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_011.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814d1c263f51bed70800000000000000
+      internalID: 9073370009346102296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_012.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 38
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d6e8af3924ea160800000000000000
+      internalID: 7038636470957927744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_013.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34ac175a354d0ca0800000000000000
+      internalID: -6049102607616793539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_014.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 420
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b34cd656c6a1eb0800000000000000
+      internalID: -4748363674219693281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_015.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 540
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610123e5bfa1927a0800000000000000
+      internalID: -6401555728410996714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_016.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 960
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b225e14204c892d0800000000000000
+      internalID: -3271649615310150984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_017.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 880
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3debe076bb0fc30800000000000000
+      internalID: 4391215687989646295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_018.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 132
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f191842a3721d6d0800000000000000
+      internalID: -2967547548786388488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_019.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1100
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76cdb76c9a425290800000000000000
+      internalID: -7903172360465955203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_020.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 820
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65073b8ba0877c9f0800000000000000
+      internalID: -448257650456301482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_021.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1100
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0851787a0a9bb2720800000000000000
+      internalID: 2822553691134301568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_022.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 180
+        width: 140
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1827776fbd33840d0800000000000000
+      internalID: -3438441295671496063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_023.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1020
+        width: 140
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1a8fd08ba0ee7d0800000000000000
+      internalID: -2887358525473250900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_024.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 18
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d96a21df2c4b1c00800000000000000
+      internalID: 872374721082714579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_025.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 52
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f30322fbb5bf020800000000000000
+      internalID: 2376594104838537029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_026.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 264
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e754e8481921781e0800000000000000
+      internalID: -2195765877116353154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_027.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 12
+        width: 140
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a99d2e3a2136980800000000000000
+      internalID: -8546967172724188639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_028.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 244
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba04cfe9b0c67b390800000000000000
+      internalID: -7802649032228323157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_029.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 604
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729e37b830b200a50800000000000000
+      internalID: 6485230757638039847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_030.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 104
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbde08de22cbec20800000000000000
+      internalID: 3236894263644969909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_031.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 324
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33c67d17c6bcc2c0800000000000000
+      internalID: -4409948968793488577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_032.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 464
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3be300ce83c9aff0800000000000000
+      internalID: -24273305099572417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_033.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 744
+        width: 140
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdfd2decf5287790800000000000000
+      internalID: -7532228608535953931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_034.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 244
+        width: 100
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9830e214d5fd78080800000000000000
+      internalID: -9185127323380350071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_035.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 272
+        width: 140
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7fe1aad4b585510800000000000000
+      internalID: 1538079661871790003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_036.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 316
+        width: 140
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cdbe7d90d1fcff10800000000000000
+      internalID: 2304982987604671943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_037.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 8
+        width: 140
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cd10753d3166bd0800000000000000
+      internalID: -2637398733360079736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_038.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 40
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780e209bfc8edc340800000000000000
+      internalID: 4885817149626704007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_039.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 920
+        width: 100
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83cdd422d9d0b63e0800000000000000
+      internalID: -2059537436055315400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_040.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 840
+        width: 100
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1b3b42449408110800000000000000
+      internalID: 1261088452686098900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_041.png
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1020
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c77fb6ce559726c0800000000000000
+      internalID: -4168198695814203453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_042.png
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1130
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433bc4e85bee01310800000000000000
+      internalID: 1373860349891883828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_043.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 400
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64cc3b184076fea0800000000000000
+      internalID: -5839356411842345877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_044.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 260
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25fa8bcbc36ddf80800000000000000
+      internalID: -8080192429488409298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_045.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 400
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54ddcd26088301a0800000000000000
+      internalID: -6844477448553376674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_046.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 540
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c171e3c3ad4e9d0800000000000000
+      internalID: -2745829920514565014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_047.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 680
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee03ac27a21cc34e0800000000000000
+      internalID: -2000511746400702226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_048.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 738
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebf3470c96eded10800000000000000
+      internalID: 2156633354391518187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_049.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 720
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3860883ecae4407a0800000000000000
+      internalID: -6411913465010059645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_050.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 72
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73fba1e01661eff80800000000000000
+      internalID: -8070988876097077449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_051.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 780
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739cbedadcfd78ee0800000000000000
+      internalID: -1258791496347563721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_052.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 6
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de272c1d58b4ea10800000000000000
+      internalID: 1937876449719955155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_053.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 760
+        width: 100
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614e185b6744a3120800000000000000
+      internalID: 2394301428542858262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_054.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 104
+        width: 100
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7781613e63b304f80800000000000000
+      internalID: -8124428620852225929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_055.png
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 208
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7974294b6219d10800000000000000
+      internalID: 2130526655713089451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_056.png
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 910
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59414f7eeccc3be00800000000000000
+      internalID: 1059415526389060757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_057.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1100
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8f0be7c9aff1170800000000000000
+      internalID: 8151509400611256545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_058.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 580
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b48404c8a7a81f30800000000000000
+      internalID: 4546568167115490485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_059.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 720
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8fb899a37860dd00800000000000000
+      internalID: 995410363624767371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_060.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 860
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2a6fcb36d3d73e0800000000000000
+      internalID: -2054418356429741315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_061.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1000
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988123f03d88a2f20800000000000000
+      internalID: 3398679308878878857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_062.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1140
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682cbe50317900e70800000000000000
+      internalID: 9079422956738429574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_063.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 8
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2423aa27d0e2c50800000000000000
+      internalID: 6642261286550913766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_064.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 58
+        width: 140
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5979e0e72b8c65fc0800000000000000
+      internalID: -3506394590916733035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_065.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 98
+        width: 140
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e570a0a4c887608b0800000000000000
+      internalID: -5186325376937621666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_066.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 134
+        width: 140
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91cff194a62cc330800000000000000
+      internalID: 3732400679449248158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_067.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 190
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c25c033e5b6a8a0800000000000000
+      internalID: -6294143441823257503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_068.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 330
+        width: 140
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10407f8db361699e0800000000000000
+      internalID: -1615078970066795519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_069.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 36
+        width: 139
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb366927967aab20800000000000000
+      internalID: 3146457681278417851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_070.png
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 4
+        width: 116
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af4bd28642e9ffb0800000000000000
+      internalID: -4613407550793363551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_071.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 680
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e376090d918865070800000000000000
+      internalID: 8094807024699729726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_072.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 820
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26e27b11230148c0800000000000000
+      internalID: -4016925951908452821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_073.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 960
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879f6e82d4ea0f5a0800000000000000
+      internalID: -6489495416618944136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_074.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1100
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a601c932f190cb090800000000000000
+      internalID: -8017523207280258966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_075.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 28
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b7d0ca67f6a8bd0800000000000000
+      internalID: -2627164877133874375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_076.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 168
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ee87da1241a8050800000000000000
+      internalID: 5803473204697165396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_077.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 268
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f923b623f9cfadd0800000000000000
+      internalID: -2472535624239601166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_078.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 288
+        width: 140
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8771cd14975da5a0800000000000000
+      internalID: -6508449592814504050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_079.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 328
+        width: 140
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c4de1ff6d0c02f0800000000000000
+      internalID: -1005413842359071639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_080.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 364
+        width: 140
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7765174f83543f710800000000000000
+      internalID: 1725799193134585463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_081.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 380
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b520f399d88d5a0800000000000000
+      internalID: -6496286773155308746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_082.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 184
+        width: 100
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae77ba6c6d9e15e0800000000000000
+      internalID: -1936937700750295378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_083.png
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1140
+        width: 60
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2a1ee14cea9f9e0800000000000000
+      internalID: -1587045236316462398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_084.png
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 78
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a5ca70e23440a80800000000000000
+      internalID: -8501596331592361367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_085.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1000
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79fb72f0b7b024c0800000000000000
+      internalID: -4314246472410596995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_086.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 878
+        width: 100
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb8ff8f305a6b030800000000000000
+      internalID: 3510174396062862264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_087.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 840
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429a8be47c7bb41d0800000000000000
+      internalID: -3365394229882214108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_088.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 940
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dcb8591e67e183b0800000000000000
+      internalID: -5511870008867111723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_089.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1040
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9948cbb96349f7620800000000000000
+      internalID: 2774098857745482905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_090.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 620
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b9970027626cdf0800000000000000
+      internalID: -160398465648977002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_091.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1140
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41228b7a2e4795380800000000000000
+      internalID: -8982019464988450284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_092.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 480
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655a412a530153310800000000000000
+      internalID: 1384030283024868694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_093.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 66
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5edd59a33629f1e0800000000000000
+      internalID: -2163656142648123813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_094.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 166
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92d72a232026e900800000000000000
+      internalID: 713292926387999391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_095.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 306
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52724d1d7c927ae60800000000000000
+      internalID: 7973387603478325029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_096.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 446
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a535972b10f3810800000000000000
+      internalID: 1747117046494354076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_097.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 586
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b440830283f0300800000000000000
+      internalID: 220456617794358164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_098.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1140
+        width: 116
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4238185a3fce46310800000000000000
+      internalID: 1397502315589632804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_099.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 598
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2958402d64a243d30800000000000000
+      internalID: 4410196418762147218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_100.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 458
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5241777cc468fd0b0800000000000000
+      internalID: -5701690938905652187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_101.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1006
+        width: 140
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92bde335a356ad4b0800000000000000
+      internalID: -5414904300780463319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_102.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1084
+        width: 140
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c3f35d6d5ff7fd0800000000000000
+      internalID: -2341882978159870914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_103.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1162
+        width: 140
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760e42004c258d8d0800000000000000
+      internalID: -2821414164778131353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_104.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1000
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c821f8503aa7c9c0800000000000000
+      internalID: -3906967027093264192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_105.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed43f07b31ade7420800000000000000
+      internalID: 2629779010641409246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_106.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 318
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81bc4d27942d42780800000000000000
+      internalID: -8708604566526702824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_107.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac3748565cdfa050800000000000000
+      internalID: 5814107907364961440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_108.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e199e8a1fa22150800000000000000
+      internalID: 5846427794876735124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_109.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3366414ad2dd95e00800000000000000
+      internalID: 1034100777554306611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_110.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 820
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b496143990501ec10800000000000000
+      internalID: 2080950041505261899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_111.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ddaa3b63190f2590800000000000000
+      internalID: -7696923259144852015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformIndustrial_112.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 198
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868e04bc89e005c20800000000000000
+      internalID: 3193068185213528168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      platformIndustrial_001.png: -2838737706257117494
+      platformIndustrial_002.png: 2085555295684886649
+      platformIndustrial_003.png: -7472954982208519972
+      platformIndustrial_004.png: -6987897810251260213
+      platformIndustrial_005.png: 3203588898248314627
+      platformIndustrial_006.png: -508632059845724543
+      platformIndustrial_007.png: 1054277698370350325
+      platformIndustrial_008.png: -4259899886144738045
+      platformIndustrial_009.png: -7721672868051301349
+      platformIndustrial_010.png: -4336668369535491730
+      platformIndustrial_011.png: 9073370009346102296
+      platformIndustrial_012.png: 7038636470957927744
+      platformIndustrial_013.png: -6049102607616793539
+      platformIndustrial_014.png: -4748363674219693281
+      platformIndustrial_015.png: -6401555728410996714
+      platformIndustrial_016.png: -3271649615310150984
+      platformIndustrial_017.png: 4391215687989646295
+      platformIndustrial_018.png: -2967547548786388488
+      platformIndustrial_019.png: -7903172360465955203
+      platformIndustrial_020.png: -448257650456301482
+      platformIndustrial_021.png: 2822553691134301568
+      platformIndustrial_022.png: -3438441295671496063
+      platformIndustrial_023.png: -2887358525473250900
+      platformIndustrial_024.png: 872374721082714579
+      platformIndustrial_025.png: 2376594104838537029
+      platformIndustrial_026.png: -2195765877116353154
+      platformIndustrial_027.png: -8546967172724188639
+      platformIndustrial_028.png: -7802649032228323157
+      platformIndustrial_029.png: 6485230757638039847
+      platformIndustrial_030.png: 3236894263644969909
+      platformIndustrial_031.png: -4409948968793488577
+      platformIndustrial_032.png: -24273305099572417
+      platformIndustrial_033.png: -7532228608535953931
+      platformIndustrial_034.png: -9185127323380350071
+      platformIndustrial_035.png: 1538079661871790003
+      platformIndustrial_036.png: 2304982987604671943
+      platformIndustrial_037.png: -2637398733360079736
+      platformIndustrial_038.png: 4885817149626704007
+      platformIndustrial_039.png: -2059537436055315400
+      platformIndustrial_040.png: 1261088452686098900
+      platformIndustrial_041.png: -4168198695814203453
+      platformIndustrial_042.png: 1373860349891883828
+      platformIndustrial_043.png: -5839356411842345877
+      platformIndustrial_044.png: -8080192429488409298
+      platformIndustrial_045.png: -6844477448553376674
+      platformIndustrial_046.png: -2745829920514565014
+      platformIndustrial_047.png: -2000511746400702226
+      platformIndustrial_048.png: 2156633354391518187
+      platformIndustrial_049.png: -6411913465010059645
+      platformIndustrial_050.png: -8070988876097077449
+      platformIndustrial_051.png: -1258791496347563721
+      platformIndustrial_052.png: 1937876449719955155
+      platformIndustrial_053.png: 2394301428542858262
+      platformIndustrial_054.png: -8124428620852225929
+      platformIndustrial_055.png: 2130526655713089451
+      platformIndustrial_056.png: 1059415526389060757
+      platformIndustrial_057.png: 8151509400611256545
+      platformIndustrial_058.png: 4546568167115490485
+      platformIndustrial_059.png: 995410363624767371
+      platformIndustrial_060.png: -2054418356429741315
+      platformIndustrial_061.png: 3398679308878878857
+      platformIndustrial_062.png: 9079422956738429574
+      platformIndustrial_063.png: 6642261286550913766
+      platformIndustrial_064.png: -3506394590916733035
+      platformIndustrial_065.png: -5186325376937621666
+      platformIndustrial_066.png: 3732400679449248158
+      platformIndustrial_067.png: -6294143441823257503
+      platformIndustrial_068.png: -1615078970066795519
+      platformIndustrial_069.png: 3146457681278417851
+      platformIndustrial_070.png: -4613407550793363551
+      platformIndustrial_071.png: 8094807024699729726
+      platformIndustrial_072.png: -4016925951908452821
+      platformIndustrial_073.png: -6489495416618944136
+      platformIndustrial_074.png: -8017523207280258966
+      platformIndustrial_075.png: -2627164877133874375
+      platformIndustrial_076.png: 5803473204697165396
+      platformIndustrial_077.png: -2472535624239601166
+      platformIndustrial_078.png: -6508449592814504050
+      platformIndustrial_079.png: -1005413842359071639
+      platformIndustrial_080.png: 1725799193134585463
+      platformIndustrial_081.png: -6496286773155308746
+      platformIndustrial_082.png: -1936937700750295378
+      platformIndustrial_083.png: -1587045236316462398
+      platformIndustrial_084.png: -8501596331592361367
+      platformIndustrial_085.png: -4314246472410596995
+      platformIndustrial_086.png: 3510174396062862264
+      platformIndustrial_087.png: -3365394229882214108
+      platformIndustrial_088.png: -5511870008867111723
+      platformIndustrial_089.png: 2774098857745482905
+      platformIndustrial_090.png: -160398465648977002
+      platformIndustrial_091.png: -8982019464988450284
+      platformIndustrial_092.png: 1384030283024868694
+      platformIndustrial_093.png: -2163656142648123813
+      platformIndustrial_094.png: 713292926387999391
+      platformIndustrial_095.png: 7973387603478325029
+      platformIndustrial_096.png: 1747117046494354076
+      platformIndustrial_097.png: 220456617794358164
+      platformIndustrial_098.png: 1397502315589632804
+      platformIndustrial_099.png: 4410196418762147218
+      platformIndustrial_100.png: -5701690938905652187
+      platformIndustrial_101.png: -5414904300780463319
+      platformIndustrial_102.png: -2341882978159870914
+      platformIndustrial_103.png: -2821414164778131353
+      platformIndustrial_104.png: -3906967027093264192
+      platformIndustrial_105.png: 2629779010641409246
+      platformIndustrial_106.png: -8708604566526702824
+      platformIndustrial_107.png: 5814107907364961440
+      platformIndustrial_108.png: 5846427794876735124
+      platformIndustrial_109.png: 1034100777554306611
+      platformIndustrial_110.png: 2080950041505261899
+      platformIndustrial_111.png: -7696923259144852015
+      platformIndustrial_112.png: 3193068185213528168
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
