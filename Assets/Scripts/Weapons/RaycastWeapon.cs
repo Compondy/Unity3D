@@ -26,6 +26,7 @@ public class RaycastWeapon : MonoBehaviour
     public int clipSize = 30;
     public int clipCount = 2;
     public float damage = 10;
+    private AudioSource audioPlayer;
 
     public RuntimeAnimatorController animator;
     public ParticleSystem[] muzzleFlash;
@@ -43,6 +44,7 @@ public class RaycastWeapon : MonoBehaviour
 
     private void Awake() {
         recoil = GetComponent<WeaponRecoil>();
+        audioPlayer = GetComponent<AudioSource>();
     }
 
     Vector3 GetPosition(Bullet bullet) {
@@ -85,6 +87,7 @@ public class RaycastWeapon : MonoBehaviour
     public void UpdateFiring(float deltaTime, Vector3 target) {
         float fireInterval = 1.0f / fireRate;
         while(accumulatedTime >= 0.0f) {
+
             FireBullet(target);
             accumulatedTime -= fireInterval;
         }
@@ -117,9 +120,10 @@ public class RaycastWeapon : MonoBehaviour
         Color debugColor = Color.green;
 
         if (Physics.Raycast(ray, out hitInfo, distance, layerMask)) {
+
             hitEffect.transform.position = hitInfo.point;
             hitEffect.transform.forward = hitInfo.normal;
-            hitEffect.Emit(1);
+            hitEffect.Play();
 
             bullet.time = maxLifetime;
             end = hitInfo.point;
@@ -158,7 +162,10 @@ public class RaycastWeapon : MonoBehaviour
         if (ammoCount <= 0) {
             return;
         }
+        if (ammoCount != 99)
         ammoCount--;
+
+        if (audioPlayer != null) audioPlayer.Play();
 
         foreach (var particle in muzzleFlash) {
             particle.Emit(1);
