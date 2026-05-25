@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "RtsControls",
+    "maps": [
+        {
+            "name": "RTS",
+            "id": "300885e8-76ce-44b9-9eb1-1c331c83c9f1",
+            "actions": [
+                {
+                    "name": "Selection",
+                    "type": "Button",
+                    "id": "4937d235-208b-4bed-b482-07d999ff0abf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MoveCommand",
+                    "type": "Button",
+                    "id": "99c27aba-3b49-48ba-990b-5bc749105e2f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4c65c1e8-9fb6-4842-86f0-a097463541af",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveCommand",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "66367ed7-1626-4a3f-a336-74f5455077d8",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Selection",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
