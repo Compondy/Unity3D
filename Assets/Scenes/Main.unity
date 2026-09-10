@@ -1757,7 +1757,6 @@ MonoBehaviour:
   playerCollider: {fileID: 1257974576}
   meshRenderer: {fileID: 0}
   animator: {fileID: 1257974577}
-  levelSound: {fileID: 8300000, guid: cbd5ee476a488444aaeb06b7e1fb04e0, type: 3}
   jumpSound: {fileID: 8300000, guid: 6cf2e77ce831b7e4eb2109cd94dec2e3, type: 3}
   hitSound: {fileID: 8300000, guid: 6750af2302e06a04283ea472a5321419, type: 3}
   deathSound: {fileID: 8300000, guid: d50066f5844c54c4c9cfba7f12b14c1e, type: 3}
@@ -3158,6 +3157,7 @@ MonoBehaviour:
   playerController: {fileID: 1257974575}
   trackGenerator: {fileID: 480420472}
   uiManager: {fileID: 1231898414}
+  musicManager: {fileID: 217806199}
 --- !u!114 &2110463497
 MonoBehaviour:
   m_ObjectHideFlags: 0

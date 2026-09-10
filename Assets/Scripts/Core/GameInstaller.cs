@@ -8,6 +8,7 @@ public class GameInstaller : MonoInstaller
     [SerializeField] private PlayerController playerController;
     [SerializeField] private TrackGenerator trackGenerator;
     [SerializeField] private UIManager uiManager;
+    [SerializeField] private MusicManager musicManager;
 
     public override void InstallBindings()
     {
@@ -15,5 +16,6 @@ public class GameInstaller : MonoInstaller
         Container.Bind<PlayerController>().FromInstance(playerController).AsSingle();
         Container.Bind<TrackGenerator>().FromInstance(trackGenerator).AsSingle();
         Container.Bind<UIManager>().FromInstance(uiManager).AsSingle();
+        Container.Bind<MusicManager>().FromInstance(musicManager).AsSingle();
     }
 }

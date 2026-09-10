@@ -1,8 +1,8 @@
 using UnityEngine;
+using Zenject;
 
 public class MusicManager : MonoBehaviour
 {
-    public static MusicManager Instance { get; private set; }
 
     [Header("Audio Settings")]
     [SerializeField] private AudioClip menuMusic;
@@ -11,17 +11,6 @@ public class MusicManager : MonoBehaviour
 
     private AudioSource _audioSource;
     private bool _isGameMusicPlaying;
-
-    private void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        Instance = this;
-    }
 
     private void Start()
     {

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [Inject] private PlayerController _player;
     [Inject] private TrackGenerator _track;
     [Inject] private UIManager _ui;
+    [Inject] private MusicManager _musicManager;
 
     public State CurrentState { get; private set; } = State.Menu;
 
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
         _player.StartRunning();
         _track.StartGeneration();
         _ui.ShowGameUI(true);
-        MusicManager.Instance?.PlayGameMusic();
+        _musicManager.PlayGameMusic();
     }
 
     public void GameOver()

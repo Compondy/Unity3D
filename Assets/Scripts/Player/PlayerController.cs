@@ -5,6 +5,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
     [Inject] private GameManager _gameManager;
+    [Inject] private MusicManager _musicManager;
 
     [Header("Movement")]
     [SerializeField] private float jumpHeight = 2.4f;
@@ -259,7 +260,7 @@ public class PlayerController : MonoBehaviour
     private void Die()
     {
         _isDead = true;
-        MusicManager.Instance?.StopMusic();
+        _musicManager.StopMusic();
         PlaySound(deathSound);
         _gameManager.GameOver();
         animator?.SetTrigger("Fall");
