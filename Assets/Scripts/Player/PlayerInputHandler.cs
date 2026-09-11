@@ -52,6 +52,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void OnSlideCanceled(InputAction.CallbackContext ctx)
     {
+        _player.StopSlide();
     }
 
     private void OnMoveLeft(InputAction.CallbackContext ctx)

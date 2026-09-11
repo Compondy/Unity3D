@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float jumpHeight = 2.4f;
     [SerializeField] private float jumpDuration = 1.0f;
-    [SerializeField] private float slideDuration = 0.6f;
     [SerializeField] private float laneSwitchSpeed = 8f;
     [SerializeField] private float laneOffset = 1.5f;
 
@@ -31,7 +30,6 @@ public class PlayerController : MonoBehaviour
     private int _currentLane = 1;
     private Vector3 _targetPosition;
     private float _jumpProgress;
-    private float _slideTimer;
     private bool _isJumping;
     private bool _isSliding;
     private bool _isInvincible;
@@ -106,7 +104,7 @@ public class PlayerController : MonoBehaviour
         );
 
         UpdateJump();
-        //UpdateSlide();
+        UpdateSlide();
     }
 
     private void UpdateJump()
@@ -153,14 +151,9 @@ public class PlayerController : MonoBehaviour
     private void UpdateSlide()
     {
         if (!_isSliding) return;
-
-        _slideTimer += Time.deltaTime;
-        if (_slideTimer >= slideDuration)
+        if (animator.GetBool("IsSliding"))
         {
-            _isSliding = false;
-            if (playerCollider != null)
-                playerCollider.transform.localScale = Vector3.one;
-            animator?.SetBool("IsSliding", false);
+            StopSlide();
         }
     }
 
@@ -169,10 +162,6 @@ public class PlayerController : MonoBehaviour
         if (_isJumping || _isSliding || _gameManager.CurrentState != GameManager.State.Playing || _isDead) return;
 
         _isSliding = true;
-        _slideTimer = 0;
-        if (playerCollider != null)
-            playerCollider.transform.localScale = new Vector3(1, 0.5f, 1);
-        animator?.SetBool("IsSliding", true);
         animator?.SetTrigger("Slide");
     }
 
@@ -181,9 +170,6 @@ public class PlayerController : MonoBehaviour
         if (_isSliding)
         {
             _isSliding = false;
-            if (playerCollider != null)
-                playerCollider.transform.localScale = Vector3.one;
-            animator?.SetBool("IsSliding", false);
         }
     }
 
@@ -284,7 +270,6 @@ public class PlayerController : MonoBehaviour
         _isInvincible = false;
         _isDead = false;
         _jumpProgress = 0;
-        _slideTimer = 0;
 
         if (playerCollider != null)
             playerCollider.transform.localScale = Vector3.one;

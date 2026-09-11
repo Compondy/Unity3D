@@ -1751,7 +1751,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpHeight: 2.4
   jumpDuration: 1
-  slideDuration: 0.6
   laneSwitchSpeed: 8
   laneOffset: 1.5
   playerCollider: {fileID: 1257974576}
