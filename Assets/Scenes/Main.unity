@@ -1761,6 +1761,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: d50066f5844c54c4c9cfba7f12b14c1e, type: 3}
   coinSound: {fileID: 8300000, guid: 808b1c1bb474b2e4e81f482b61c5af1f, type: 3}
   powerupSound: {fileID: 8300000, guid: 547472b07cea53644a3973cea637b188, type: 3}
+  slideSound: {fileID: 8300000, guid: 75816256c4f980241bda615975b12846, type: 3}
 --- !u!136 &1257974576
 CapsuleCollider:
   m_ObjectHideFlags: 0

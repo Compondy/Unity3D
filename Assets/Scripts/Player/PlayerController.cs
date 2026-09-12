@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioClip coinSound;
     [SerializeField] private AudioClip powerupSound;
+    [SerializeField] private AudioClip slideSound;
 
     private AudioSource _audioSource;
 
@@ -160,7 +161,7 @@ public class PlayerController : MonoBehaviour
     public void Slide()
     {
         if (_isJumping || _isSliding || _gameManager.CurrentState != GameManager.State.Playing || _isDead) return;
-
+        PlaySound(slideSound);
         _isSliding = true;
         animator?.SetTrigger("Slide");
     }
