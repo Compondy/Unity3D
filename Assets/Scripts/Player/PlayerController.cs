@@ -41,9 +41,9 @@ public class PlayerController : MonoBehaviour
     private Material _material;
     private Color _originalColor;
 
-    public static bool MagnetActive { get; set; }
-    public static bool DoubleScoreActive { get; set; }
-    public static bool InvincibilityActive { get; set; }
+    public bool MagnetActive { get; set; }
+    public bool DoubleScoreActive { get; set; }
+    public bool InvincibilityActive { get; set; }
     private CancellationTokenSource _powerupCts;
     private enum PowerupKind { Magnet, DoubleScore, Invincibility }
     private CancellationTokenSource _magnetCts;
@@ -353,7 +353,7 @@ public class PlayerController : MonoBehaviour
         RunPowerupTimerAsync(kind, duration, cts.Token).Forget();
     }
 
-    private static void SetFlag(PowerupKind kind, bool value)
+    private void SetFlag(PowerupKind kind, bool value)
     {
         switch (kind)
         {

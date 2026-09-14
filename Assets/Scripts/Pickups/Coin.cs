@@ -4,6 +4,7 @@ using Zenject;
 public class Coin : MonoBehaviour, IPickupable
 {
     [Inject] private GameManager _gameManager;
+    [Inject] private PlayerController _playerController;
 
     [Header("Settings")]
     [SerializeField] private float rotationSpeed = 180f;
@@ -15,9 +16,8 @@ public class Coin : MonoBehaviour, IPickupable
 
     private void Start()
     {
-        var playerController = FindObjectOfType<PlayerController>();
-        if (playerController != null)
-            _player = playerController.transform;
+        if (_playerController == null) _playerController = FindObjectOfType<PlayerController>();
+        _player = _playerController.transform;
 
         if (_gameManager == null)
             _gameManager = FindObjectOfType<GameManager>();
@@ -30,7 +30,7 @@ public class Coin : MonoBehaviour, IPickupable
 
         if (_isCollected) return;
 
-        if (PlayerController.MagnetActive && _player != null)
+        if (_playerController.MagnetActive && _player != null)
         {
             float distance = Vector3.Distance(transform.position, _player.position);
 

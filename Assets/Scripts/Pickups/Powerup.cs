@@ -5,7 +5,7 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 public class Powerup : MonoBehaviour, IPickupable
 {
     [Inject] private GameManager _gameManager;
-    [Inject] private PlayerController _player;
+    [Inject] private PlayerController _playerController;
 
     public enum Type { Magnet, DoubleScore, ExtraLife, Invincibility }
 
@@ -17,18 +17,18 @@ public class Powerup : MonoBehaviour, IPickupable
     {
         if (_gameManager == null)
             _gameManager = FindObjectOfType<GameManager>();
-        if (_player == null)
-            _player = FindObjectOfType<PlayerController>();
+        if (_playerController == null)
+            _playerController = FindObjectOfType<PlayerController>();
     }
 
     public void Collect()
     {
         switch (powerupType)
         {
-            case Type.Magnet: _player.ActivateMagnet(duration); break;
-            case Type.DoubleScore: _player.ActivateDoubleScore(duration); break;
+            case Type.Magnet: _playerController.ActivateMagnet(duration); break;
+            case Type.DoubleScore: _playerController.ActivateDoubleScore(duration); break;
             case Type.ExtraLife: _gameManager.AddLife(1); break;
-            case Type.Invincibility: _player.ActivateInvincibility(duration); break;
+            case Type.Invincibility: _playerController.ActivateInvincibility(duration); break;
         }
         gameObject.SetActive(false);
     }

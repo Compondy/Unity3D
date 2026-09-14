@@ -19,11 +19,13 @@ public class GameManager : MonoBehaviour
     public float RunTime { get; private set; }
     public int ComboMultiplier { get; private set; }
 
-
     public float MinSpeed = 5f;
     public float MaxSpeed = 12f;
     public float Acceleration = 0.2f;
     public int MaxLives = 3;
+
+    private float _scoreTickTimer;
+    private const float ScoreTickInterval = 1f;
 
     private void Start()
     {
@@ -83,14 +85,24 @@ public class GameManager : MonoBehaviour
         _ui.UpdateLives(Lives);
     }
 
-    private void UpdateScore()
+
+    private void UpdateScore(float deltaTime)
     {
+        _scoreTickTimer += deltaTime;
+        if (_scoreTickTimer < ScoreTickInterval) return;
+        _scoreTickTimer -= ScoreTickInterval;
+
         float timeScore = RunTime * 100f;
         float speedBonus = Speed * 0.5f;
         float livesBonus = Lives * 200f;
         float coinBonus = Coins * 50f;
         float comboBonus = ComboMultiplier * 50f;
-        Score = (int)(timeScore + speedBonus + livesBonus + coinBonus + comboBonus);
+
+        float runScore = timeScore + speedBonus;
+        if (_player.DoubleScoreActive) runScore *= 2f;
+
+        int gained = Mathf.RoundToInt(runScore + livesBonus + coinBonus + comboBonus);
+        Score += gained;
     }
 
     private void Update()
@@ -99,7 +111,7 @@ public class GameManager : MonoBehaviour
         {
             RunTime += Time.deltaTime;
 
-            UpdateScore();
+            UpdateScore(Time.deltaTime);
 
             if (Speed < MaxSpeed)
                 Speed += Acceleration * Time.deltaTime;
