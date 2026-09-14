@@ -358,14 +358,6 @@ public class PlayerController : MonoBehaviour
     {
         if (_isDead) return;
 
-        if (other.TryGetComponent<Coin>(out var coin))
-        {
-            PlaySound(coinSound);
-            _gameManager.AddCoins(1);
-            other.gameObject.SetActive(false);
-            return;
-        }
-
         if (other.TryGetComponent<Obstacle>(out var obstacle))
         {
             if (_isInvincible || InvincibilityActive) return;
@@ -374,12 +366,14 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (other.TryGetComponent<Powerup>(out var powerup))
+        if (other.TryGetComponent<IPickupable>(out var pickupable))
         {
-            PlaySound(powerupSound);
-            powerup.Activate();
-            other.gameObject.SetActive(false);
-            return;
+            if (other.TryGetComponent<Coin>(out _))
+                PlaySound(coinSound);
+            else
+            if (other.TryGetComponent<Powerup>(out _))
+                PlaySound(powerupSound);
+            pickupable.Collect();
         }
     }
 }

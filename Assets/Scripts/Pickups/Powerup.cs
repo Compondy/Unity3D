@@ -1,23 +1,23 @@
 using UnityEngine;
+using Zenject;
 
-public class Powerup : MonoBehaviour
+public class Powerup : MonoBehaviour, IPickupable
 {
+    [Inject] private GameManager _gameManager;
+
     public enum Type { Magnet, DoubleScore, ExtraLife, Invincibility }
 
     [Header("Settings")]
     [SerializeField] private Type powerupType;
     [SerializeField] private float duration = 5f;
 
-    private void OnTriggerEnter(Collider other)
+    public void Start()
     {
-        if (other.TryGetComponent<PlayerController>(out _))
-        {
-            Activate();
-            gameObject.SetActive(false);
-        }
+        if (_gameManager == null)
+            _gameManager = FindObjectOfType<GameManager>();
     }
 
-    public void Activate()
+    public void Collect()
     {
         switch (powerupType)
         {
@@ -30,14 +30,14 @@ public class Powerup : MonoBehaviour
                 Invoke(nameof(DeactivateDoubleScore), duration);
                 break;
             case Type.ExtraLife:
-                GameManager gameManager = FindObjectOfType<GameManager>();
-                gameManager?.AddLife(1);
+                _gameManager.AddLife(1);
                 break;
             case Type.Invincibility:
                 PlayerController.InvincibilityActive = true;
                 Invoke(nameof(DeactivateInvincibility), duration);
                 break;
         }
+        gameObject.SetActive(false);
     }
 
     private void DeactivateMagnet() => PlayerController.MagnetActive = false;

@@ -1,7 +1,10 @@
 using UnityEngine;
+using Zenject;
 
-public class Coin : MonoBehaviour
+public class Coin : MonoBehaviour, IPickupable
 {
+    [Inject] private GameManager _gameManager;
+
     [Header("Settings")]
     [SerializeField] private float rotationSpeed = 180f;
     [SerializeField] private float magnetSpeed = 10f;
@@ -15,6 +18,10 @@ public class Coin : MonoBehaviour
         var playerController = FindObjectOfType<PlayerController>();
         if (playerController != null)
             _player = playerController.transform;
+
+        if (_gameManager == null)
+            _gameManager = FindObjectOfType<GameManager>();
+
     }
 
     private void Update()
@@ -42,25 +49,11 @@ public class Coin : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.TryGetComponent<PlayerController>(out _))
-        {
-            Collect();
-        }
-    }
-
-    private void Collect()
+    public void Collect()
     {
         if (_isCollected) return;
         _isCollected = true;
-
-        GameManager gameManager = FindObjectOfType<GameManager>();
-        if (gameManager != null)
-        {
-            gameManager.AddCoins(1);
-        }
-
+        _gameManager.AddCoins(1);
         gameObject.SetActive(false);
     }
 
@@ -68,4 +61,5 @@ public class Coin : MonoBehaviour
     {
         _isCollected = false;
     }
+
 }
