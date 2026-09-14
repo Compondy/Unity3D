@@ -262,6 +262,8 @@ public class PlayerController : MonoBehaviour
 
     public void FullReset()
     {
+        Time.timeScale = 1f;
+
         _currentLane = 1;
         _targetPosition = new Vector3(0, BaseY, 0);
         transform.position = _targetPosition;
