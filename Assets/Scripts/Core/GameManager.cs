@@ -78,17 +78,9 @@ public class GameManager : MonoBehaviour
     public void TakeDamage()
     {
         if (CurrentState != State.Playing) return;
-
         Lives--;
-
         ComboMultiplier = 1;
-
         _ui.UpdateLives(Lives);
-
-        if (Lives <= 0)
-        {
-            GameOver();
-        }
     }
 
     private void UpdateScore()
