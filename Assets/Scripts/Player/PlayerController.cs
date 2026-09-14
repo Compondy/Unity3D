@@ -1,6 +1,9 @@
+using Cysharp.Threading.Tasks;
+using System.Collections;
+using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
 using Zenject;
-using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -41,6 +44,11 @@ public class PlayerController : MonoBehaviour
     public static bool MagnetActive { get; set; }
     public static bool DoubleScoreActive { get; set; }
     public static bool InvincibilityActive { get; set; }
+    private CancellationTokenSource _powerupCts;
+    private enum PowerupKind { Magnet, DoubleScore, Invincibility }
+    private CancellationTokenSource _magnetCts;
+    private CancellationTokenSource _doubleScoreCts;
+    private CancellationTokenSource _invincibilityCts;
 
     public int CurrentLane => _currentLane;
     public bool IsJumping => _isJumping;
@@ -49,7 +57,11 @@ public class PlayerController : MonoBehaviour
 
     private float BaseY => 0.527f;
 
-    // === Инициализация ===
+    private void Awake()
+    {
+        _powerupCts = new CancellationTokenSource();
+    }
+
     private void Start()
     {
         _targetPosition = new Vector3(0, BaseY, 0);
@@ -247,6 +259,7 @@ public class PlayerController : MonoBehaviour
     private void Die()
     {
         _isDead = true;
+        CancelAllPowerups();
         _musicManager.StopMusic();
         PlaySound(deathSound);
         _gameManager.GameOver();
@@ -263,6 +276,7 @@ public class PlayerController : MonoBehaviour
     public void FullReset()
     {
         Time.timeScale = 1f;
+        CancelAllPowerups();
 
         _currentLane = 1;
         _targetPosition = new Vector3(0, BaseY, 0);
@@ -321,38 +335,55 @@ public class PlayerController : MonoBehaviour
     }
 
     public void ActivateMagnet(float duration)
-    {
-        MagnetActive = true;
-        StartCoroutine(DeactivateMagnet(duration));
-    }
-
-    private IEnumerator DeactivateMagnet(float duration)
-    {
-        yield return new WaitForSeconds(duration);
-        MagnetActive = false;
-    }
+        => ActivatePowerup(ref _magnetCts, PowerupKind.Magnet, duration);
 
     public void ActivateDoubleScore(float duration)
-    {
-        DoubleScoreActive = true;
-        StartCoroutine(DeactivateDoubleScore(duration));
-    }
-
-    private IEnumerator DeactivateDoubleScore(float duration)
-    {
-        yield return new WaitForSeconds(duration);
-        DoubleScoreActive = false;
-    }
+        => ActivatePowerup(ref _doubleScoreCts, PowerupKind.DoubleScore, duration);
 
     public void ActivateInvincibility(float duration)
+        => ActivatePowerup(ref _invincibilityCts, PowerupKind.Invincibility, duration);
+
+    private void ActivatePowerup(ref CancellationTokenSource cts, PowerupKind kind, float duration)
     {
-        InvincibilityActive = true;
-        StartCoroutine(DeactivateInvincibility(duration));
+        cts?.Cancel();
+        cts?.Dispose();
+        cts = CancellationTokenSource.CreateLinkedTokenSource(_powerupCts.Token);
+
+        SetFlag(kind, true);
+        RunPowerupTimerAsync(kind, duration, cts.Token).Forget();
     }
 
-    private IEnumerator DeactivateInvincibility(float duration)
+    private static void SetFlag(PowerupKind kind, bool value)
     {
-        yield return new WaitForSeconds(duration);
+        switch (kind)
+        {
+            case PowerupKind.Magnet: MagnetActive = value; break;
+            case PowerupKind.DoubleScore: DoubleScoreActive = value; break;
+            case PowerupKind.Invincibility: InvincibilityActive = value; break;
+        }
+    }
+
+    private async UniTaskVoid RunPowerupTimerAsync(PowerupKind kind, float duration, CancellationToken token)
+    {
+        await UniTask.Delay(System.TimeSpan.FromSeconds(duration),
+                            DelayType.Realtime,
+                            cancellationToken: token);
+
+        SetFlag(kind, false);
+    }
+
+    private void CancelAllPowerups()
+    {
+        _powerupCts?.Cancel();
+        _powerupCts?.Dispose();
+        _powerupCts = new CancellationTokenSource();
+
+        _magnetCts?.Dispose(); _magnetCts = null;
+        _doubleScoreCts?.Dispose(); _doubleScoreCts = null;
+        _invincibilityCts?.Dispose(); _invincibilityCts = null;
+
+        MagnetActive = false;
+        DoubleScoreActive = false;
         InvincibilityActive = false;
     }
 
@@ -378,4 +409,11 @@ public class PlayerController : MonoBehaviour
             pickupable.Collect();
         }
     }
+
+    private void OnDestroy()
+    {
+        _powerupCts?.Cancel();
+        _powerupCts?.Dispose();
+    }
+
 }

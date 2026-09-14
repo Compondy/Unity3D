@@ -1,9 +1,11 @@
 using UnityEngine;
 using Zenject;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Powerup : MonoBehaviour, IPickupable
 {
     [Inject] private GameManager _gameManager;
+    [Inject] private PlayerController _player;
 
     public enum Type { Magnet, DoubleScore, ExtraLife, Invincibility }
 
@@ -11,36 +13,23 @@ public class Powerup : MonoBehaviour, IPickupable
     [SerializeField] private Type powerupType;
     [SerializeField] private float duration = 5f;
 
-    public void Start()
+    public void Awake()
     {
         if (_gameManager == null)
             _gameManager = FindObjectOfType<GameManager>();
+        if (_player == null)
+            _player = FindObjectOfType<PlayerController>();
     }
 
     public void Collect()
     {
         switch (powerupType)
         {
-            case Type.Magnet:
-                PlayerController.MagnetActive = true;
-                Invoke(nameof(DeactivateMagnet), duration);
-                break;
-            case Type.DoubleScore:
-                PlayerController.DoubleScoreActive = true;
-                Invoke(nameof(DeactivateDoubleScore), duration);
-                break;
-            case Type.ExtraLife:
-                _gameManager.AddLife(1);
-                break;
-            case Type.Invincibility:
-                PlayerController.InvincibilityActive = true;
-                Invoke(nameof(DeactivateInvincibility), duration);
-                break;
+            case Type.Magnet: _player.ActivateMagnet(duration); break;
+            case Type.DoubleScore: _player.ActivateDoubleScore(duration); break;
+            case Type.ExtraLife: _gameManager.AddLife(1); break;
+            case Type.Invincibility: _player.ActivateInvincibility(duration); break;
         }
         gameObject.SetActive(false);
     }
-
-    private void DeactivateMagnet() => PlayerController.MagnetActive = false;
-    private void DeactivateDoubleScore() => PlayerController.DoubleScoreActive = false;
-    private void DeactivateInvincibility() => PlayerController.InvincibilityActive = false;
 }
