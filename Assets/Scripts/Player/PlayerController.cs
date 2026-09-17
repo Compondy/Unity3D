@@ -57,6 +57,9 @@ public class PlayerController : MonoBehaviour
 
     private float BaseY => 0.527f;
 
+    private bool _doubleScoreForever;
+    public void LockDoubleScoreForever() => _doubleScoreForever = true;
+
     private void Awake()
     {
         _powerupCts = new CancellationTokenSource();
@@ -385,6 +388,8 @@ public class PlayerController : MonoBehaviour
         MagnetActive = false;
         DoubleScoreActive = false;
         InvincibilityActive = false;
+
+        if (!_doubleScoreForever) DoubleScoreActive = false;
     }
 
     private void OnTriggerEnter(Collider other)

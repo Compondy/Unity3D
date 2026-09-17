@@ -3,12 +3,14 @@ using Zenject;
 
 public class GameManager : MonoBehaviour
 {
-    public enum State { Menu, Playing, GameOver }
+    public enum State { Menu, Playing, Paused, GameOver }
 
     [Inject] private PlayerController _player;
     [Inject] private TrackGenerator _track;
     [Inject] private UIManager _ui;
     [Inject] private MusicManager _musicManager;
+    [Inject] private MetaProgress _meta;
+    [Inject] private ISaveService _save;
 
     public State CurrentState { get; private set; } = State.Menu;
 
@@ -26,6 +28,20 @@ public class GameManager : MonoBehaviour
 
     private float _scoreTickTimer;
     private const float ScoreTickInterval = 1f;
+    public void Pause()
+    {
+        if (CurrentState != State.Playing) return;
+        Time.timeScale = 0f;
+        CurrentState = State.Paused;
+        _ui.ShowPause(true);
+    }
+    public void Resume()
+    {
+        if (CurrentState != State.Paused) return;
+        Time.timeScale = 1f;
+        CurrentState = State.Playing;
+        _ui.ShowPause(false);
+    }
 
     private void Start()
     {
@@ -34,7 +50,11 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        _track.StopGeneration();
+        Time.timeScale = 1f;
+
         CurrentState = State.Playing;
+
         Score = 0;
         Coins = 0;
         Lives = MaxLives;
@@ -44,8 +64,16 @@ public class GameManager : MonoBehaviour
 
         _player.ResetPosition();
         _player.StartRunning();
+
+        if (_meta.DoubleScorePurchased)
+        {
+            _player.DoubleScoreActive = true;
+            _player.LockDoubleScoreForever();
+        }
+
         _track.StartGeneration();
         _ui.ShowGameUI(true);
+        _ui.ShowPause(false);
         _musicManager.PlayGameMusic();
     }
 
@@ -53,6 +81,7 @@ public class GameManager : MonoBehaviour
     {
         CurrentState = State.GameOver;
         _track.StopGeneration();
+        _meta.AddToBank(Score);
         _ui.ShowGameOver(true, Score);
         SaveScore();
     }
@@ -92,11 +121,11 @@ public class GameManager : MonoBehaviour
         if (_scoreTickTimer < ScoreTickInterval) return;
         _scoreTickTimer -= ScoreTickInterval;
 
-        float timeScore = RunTime * 100f;
-        float speedBonus = Speed * 0.5f;
-        float livesBonus = Lives * 200f;
-        float coinBonus = Coins * 50f;
-        float comboBonus = ComboMultiplier * 50f;
+        float timeScore = RunTime * 10f;
+        float speedBonus = Speed;
+        float livesBonus = Lives * 10f;
+        float coinBonus = Coins * 5f;
+        float comboBonus = ComboMultiplier * 2f;
 
         float runScore = timeScore + speedBonus;
         if (_player.DoubleScoreActive) runScore *= 2f;
@@ -120,8 +149,16 @@ public class GameManager : MonoBehaviour
 
     private void SaveScore()
     {
-        int highScore = PlayerPrefs.GetInt("HighScore", 0);
+        int highScore = _save.GetInt("HighScore", 0);
         if (Score > highScore)
-            PlayerPrefs.SetInt("HighScore", Score);
+            _save.SetInt("HighScore", Score);
+    }
+
+    public void StopGame()
+    {
+        Time.timeScale = 1f;
+        _track.StopGeneration();
+        _player.FullReset();
+        _musicManager.PlayMenuMusic();
     }
 }

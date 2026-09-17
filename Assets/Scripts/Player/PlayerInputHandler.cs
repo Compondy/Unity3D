@@ -5,6 +5,8 @@ using Zenject;
 public class PlayerInputHandler : MonoBehaviour
 {
     [Inject] private PlayerController _player;
+    [Inject] private GameManager _gameManager;
+
 
     private PlayerInputActions _inputActions;
 
@@ -20,6 +22,23 @@ public class PlayerInputHandler : MonoBehaviour
 
         _inputActions.Player.Jump.canceled += OnJumpCanceled;
         _inputActions.Player.Slide.canceled += OnSlideCanceled;
+        _inputActions.Player.Pause.performed += OnPause;
+    }
+
+    private void OnPause(InputAction.CallbackContext ctx)
+    {
+        if (_gameManager.CurrentState == GameManager.State.Playing) _gameManager.Pause();
+        else if (_gameManager.CurrentState == GameManager.State.Paused) _gameManager.Resume();
+    }
+
+    private void OnEnable()
+    {
+        _inputActions?.Player.Enable();
+    }
+
+    private void OnDisable()
+    {
+        _inputActions?.Player.Disable();
     }
 
     private void OnDestroy()
@@ -32,7 +51,10 @@ public class PlayerInputHandler : MonoBehaviour
             _inputActions.Player.MoveRight.performed -= OnMoveRight;
             _inputActions.Player.Jump.canceled -= OnJumpCanceled;
             _inputActions.Player.Slide.canceled -= OnSlideCanceled;
+            _inputActions.Player.Pause.performed -= OnPause;
+            _inputActions.Player.Disable();
             _inputActions.Dispose();
+            _inputActions = null;
         }
     }
 

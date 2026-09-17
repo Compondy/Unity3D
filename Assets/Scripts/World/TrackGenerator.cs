@@ -83,6 +83,9 @@ public class TrackGenerator : MonoBehaviour
 
     public void StopGeneration()
     {
+        if (!_isGenerating && _activeSegments.Count == 0)
+            return;
+
         menuSegments.SetActive(true);
         _isGenerating = false;
 

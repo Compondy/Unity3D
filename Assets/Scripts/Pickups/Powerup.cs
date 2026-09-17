@@ -1,6 +1,5 @@
 using UnityEngine;
 using Zenject;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Powerup : MonoBehaviour, IPickupable
 {
