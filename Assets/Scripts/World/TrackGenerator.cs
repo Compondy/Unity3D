@@ -154,28 +154,25 @@ public class TrackGenerator : MonoBehaviour
 
     private void ReturnSegmentToPool(GameObject segment)
     {
-        foreach (Transform child in segment.transform)
+        var items = segment.GetComponent<TrackSegment>();
+
+        foreach (var item in items.powerupsInSegment)
         {
-            if (child.TryGetComponent<Coin>(out _))
-            {
-                child.gameObject.SetActive(false);
-                _coinPool.Enqueue(child.gameObject);
-                continue;
-            }
-
-            if (child.TryGetComponent<Obstacle>(out _))
-            {
-                child.gameObject.SetActive(false);
-                _obstaclePool.Enqueue(child.gameObject);
-                continue;
-            }
-
-            if (child.TryGetComponent<Powerup>(out _))
-            {
-                child.gameObject.SetActive(false);
-                _powerupPool.Enqueue(child.gameObject);
-                continue;
-            }
+            item.gameObject.SetActive(false);
+            item.transform.SetParent(null);
+            _powerupPool.Enqueue(item.gameObject);
+        }
+        foreach (var item in items.coinsInSegment)
+        {
+            item.gameObject.SetActive(false);
+            item.transform.SetParent(null);
+            _coinPool.Enqueue(item.gameObject);
+        }
+        foreach (var item in items.obstaclesInSegment)
+        {
+            item.gameObject.SetActive(false);
+            item.transform.SetParent(null);
+            _obstaclePool.Enqueue(item.gameObject);
         }
 
         segment.SetActive(false);
@@ -216,6 +213,7 @@ public class TrackGenerator : MonoBehaviour
                     obs.transform.SetParent(obstacleTransform);
                     obs.transform.localScale = Vector3.one;
                     obs.SetActive(true);
+                    segment.GetComponent<TrackSegment>().obstaclesInSegment.Add(obs);
                 }
             }
             else if (Random.value < coinChance)
@@ -230,6 +228,7 @@ public class TrackGenerator : MonoBehaviour
                     coin.transform.SetParent(coinsTransform);
                     coin.transform.localScale = Vector3.one;
                     coin.SetActive(true);
+                    segment.GetComponent<TrackSegment>().coinsInSegment.Add(coin);
                 }
             }
 
@@ -250,6 +249,7 @@ public class TrackGenerator : MonoBehaviour
                     powerup.transform.SetParent(powerupsTransform);
                     powerup.transform.localScale = Vector3.one;
                     powerup.SetActive(true);
+                    segment.GetComponent<TrackSegment>().powerupsInSegment.Add(powerup);
                 }
             }
         }
