@@ -27,8 +27,20 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void OnPause(InputAction.CallbackContext ctx)
     {
-        if (_gameManager.CurrentState == GameManager.State.Playing) _gameManager.Pause();
-        else if (_gameManager.CurrentState == GameManager.State.Paused) _gameManager.Resume();
+        switch (_gameManager.CurrentState)
+        {
+            case GameManager.State.Playing:
+                _gameManager.Pause();
+                break;
+
+            case GameManager.State.Paused:
+                _gameManager.Resume();
+                break;
+
+            case GameManager.State.Menu:
+                Application.Quit();
+                break;
+        }
     }
 
     private void OnEnable()
