@@ -33,5 +33,7 @@ public class SlideStateBehaviour : StateMachineBehaviour
             _capsule.center = new Vector3(0, 0.7f, 0);
         }
         animator.SetBool("IsSliding", false);
+        var pc = animator.GetComponent<PlayerController>();
+        if (pc != null) pc.ForceStopSlide();
     }
 }

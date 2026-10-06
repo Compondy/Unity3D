@@ -120,7 +120,6 @@ public class PlayerController : MonoBehaviour
         );
 
         UpdateJump();
-        UpdateSlide();
     }
 
     private void UpdateJump()
@@ -164,15 +163,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void UpdateSlide()
-    {
-        if (!_isSliding) return;
-        if (animator.GetBool("IsSliding"))
-        {
-            StopSlide();
-        }
-    }
-
     public void Slide()
     {
         if (_isJumping || _isSliding || _gameManager.CurrentState != GameManager.State.Playing || _isDead) return;
@@ -181,13 +171,6 @@ public class PlayerController : MonoBehaviour
         animator?.SetTrigger("Slide");
     }
 
-    public void StopSlide()
-    {
-        if (_isSliding)
-        {
-            _isSliding = false;
-        }
-    }
 
     public void MoveLeft() => ChangeLane(-1);
     public void MoveRight() => ChangeLane(1);
@@ -391,6 +374,7 @@ public class PlayerController : MonoBehaviour
 
         if (!_doubleScoreForever) DoubleScoreActive = false;
     }
+    public void ForceStopSlide() => _isSliding = false;
 
     private void OnTriggerEnter(Collider other)
     {

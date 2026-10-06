@@ -19,9 +19,7 @@ public class PlayerInputHandler : MonoBehaviour
         _inputActions.Player.Slide.performed += OnSlide;
         _inputActions.Player.MoveLeft.performed += OnMoveLeft;
         _inputActions.Player.MoveRight.performed += OnMoveRight;
-
         _inputActions.Player.Jump.canceled += OnJumpCanceled;
-        _inputActions.Player.Slide.canceled += OnSlideCanceled;
         _inputActions.Player.Pause.performed += OnPause;
     }
 
@@ -62,7 +60,6 @@ public class PlayerInputHandler : MonoBehaviour
             _inputActions.Player.MoveLeft.performed -= OnMoveLeft;
             _inputActions.Player.MoveRight.performed -= OnMoveRight;
             _inputActions.Player.Jump.canceled -= OnJumpCanceled;
-            _inputActions.Player.Slide.canceled -= OnSlideCanceled;
             _inputActions.Player.Pause.performed -= OnPause;
             _inputActions.Player.Disable();
             _inputActions.Dispose();
@@ -82,11 +79,6 @@ public class PlayerInputHandler : MonoBehaviour
     private void OnSlide(InputAction.CallbackContext ctx)
     {
         _player.Slide();
-    }
-
-    private void OnSlideCanceled(InputAction.CallbackContext ctx)
-    {
-        _player.StopSlide();
     }
 
     private void OnMoveLeft(InputAction.CallbackContext ctx)
