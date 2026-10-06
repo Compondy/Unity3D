@@ -199,36 +199,40 @@ public class TrackGenerator : MonoBehaviour
             availableLanes.RemoveAt(laneIndex);
 
             Vector3 spawnPos = pos + GetLaneOffset(lane, rot);
-            spawnPos.y = SURFACE_Y;
 
             if (Random.value < obstacleChance)
             {
                 var obs = GetFromPool(_obstaclePool);
                 if (obs != null)
                 {
-                    spawnPos.y = SURFACE_Y + 0.5f;
-                    obs.transform.position = spawnPos;
+                    obs.transform.SetParent(segComponent.ObstaclesRoot, false);
+                    obs.transform.position = new Vector3(
+                        spawnPos.x,
+                        SURFACE_Y + 0.5f,
+                        spawnPos.z
+                    );
                     obs.transform.rotation = rot;
-                    var obstacleTransform = segment.transform.GetChild(0).transform.GetChild(2).transform;
-                    obs.transform.SetParent(obstacleTransform);
                     obs.transform.localScale = Vector3.one;
                     obs.SetActive(true);
-                    segment.GetComponent<TrackSegment>().obstaclesInSegment.Add(obs);
+                    segComponent.obstaclesInSegment.Add(obs);
                 }
             }
+            
             else if (Random.value < coinChance)
             {
                 var coin = GetFromPool(_coinPool);
                 if (coin != null)
                 {
-                    spawnPos.y = SURFACE_Y + 0.5f + 0.3f;
-                    coin.transform.position = spawnPos;
+                    coin.transform.SetParent(segComponent.CoinsRoot, false);
+                    coin.transform.position = new Vector3(
+                        spawnPos.x,
+                        SURFACE_Y + 0.8f,
+                        spawnPos.z
+                    );
                     coin.transform.rotation = rot;
-                    var coinsTransform = segment.transform.GetChild(0).transform.GetChild(1).transform;
-                    coin.transform.SetParent(coinsTransform);
                     coin.transform.localScale = Vector3.one;
                     coin.SetActive(true);
-                    segment.GetComponent<TrackSegment>().coinsInSegment.Add(coin);
+                    segComponent.coinsInSegment.Add(coin);
                 }
             }
 
@@ -242,14 +246,17 @@ public class TrackGenerator : MonoBehaviour
                 if (powerup != null)
                 {
                     Vector3 powerupPos = pos + GetLaneOffset(bonusLane, rot);
-                    powerupPos.y = SURFACE_Y + 1f;
-                    powerup.transform.position = powerupPos;
+
+                    powerup.transform.SetParent(segComponent.PowerupsRoot, false);
+                    powerup.transform.position = new Vector3(
+                        powerupPos.x,
+                        SURFACE_Y + 1f,
+                        powerupPos.z
+                    );
                     powerup.transform.rotation = rot;
-                    var powerupsTransform = segment.transform.GetChild(0).transform.GetChild(0).transform;
-                    powerup.transform.SetParent(powerupsTransform);
                     powerup.transform.localScale = Vector3.one;
                     powerup.SetActive(true);
-                    segment.GetComponent<TrackSegment>().powerupsInSegment.Add(powerup);
+                    segComponent.powerupsInSegment.Add(powerup);
                 }
             }
         }

@@ -114,6 +114,9 @@ MonoBehaviour:
   coinsInSegment: []
   obstaclesInSegment: []
   powerupsInSegment: []
+  coinsRoot: {fileID: 5053036872383213534}
+  obstaclesRoot: {fileID: 8050310826991444320}
+  powerupsRoot: {fileID: 2423747797615750432}
 --- !u!1 &4113686061438045893
 GameObject:
   m_ObjectHideFlags: 0

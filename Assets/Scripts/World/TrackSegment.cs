@@ -16,6 +16,15 @@ public class TrackSegment : MonoBehaviour
     public Transform PathParent => pathParent;
     public float WorldLength => worldLength;
 
+    [Header("Containers")]
+    [SerializeField] private Transform coinsRoot;
+    [SerializeField] private Transform obstaclesRoot;
+    [SerializeField] private Transform powerupsRoot;
+
+    public Transform CoinsRoot => coinsRoot;
+    public Transform ObstaclesRoot => obstaclesRoot;
+    public Transform PowerupsRoot => powerupsRoot;
+
     private void OnValidate()
     {
         if (pathParent != null && pathParent.childCount > 1)
