@@ -24,7 +24,12 @@ public class UIManager : MonoBehaviour
     [Header("Game Over UI")]
     [SerializeField] private TMP_Text finalScoreText;
     [SerializeField] private TMP_Text highScoreText;
-    
+
+    private int _lastScore = -1;
+    private int _lastCoins = -1;
+    private int _lastLives = -1;
+    private float _lastSpeed = -1f;
+
     public void OnShopPressed() => shopUI.Open();
     public void OnStartPressed() => _gameManager.StartGame();
     public void OnRestartPressed() {
@@ -48,12 +53,29 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if (_gameManager.CurrentState == GameManager.State.Playing)
+        if (_gameManager.CurrentState != GameManager.State.Playing) return;
+
+        if (_gameManager.Score != _lastScore)
         {
-            scoreText.text = $"Score: {_gameManager.Score}";
-            coinsText.text = $"Coins: {_gameManager.Coins}";
-            livesText.text = $"Lives: {_gameManager.Lives}";
-            speedText.text = $"Speed: {_gameManager.Speed:F1}";
+            _lastScore = _gameManager.Score;
+            scoreText.text = $"Score: {_lastScore}";
+        }
+
+        if (_gameManager.Coins != _lastCoins)
+        {
+            _lastCoins = _gameManager.Coins;
+            coinsText.text = $"Coins: {_lastCoins}";
+        }
+
+        if (_gameManager.Lives != _lastLives)
+        {
+            _lastLives = _gameManager.Lives;
+            livesText.text = $"Lives: {_lastLives}";
+        }
+        if (Mathf.Abs(_gameManager.Speed - _lastSpeed) > 0.1f)
+        {
+            _lastSpeed = _gameManager.Speed;
+            speedText.text = $"Speed: {_lastSpeed:F1}";
         }
     }
 
