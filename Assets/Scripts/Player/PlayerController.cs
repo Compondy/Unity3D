@@ -166,11 +166,13 @@ public class PlayerController : MonoBehaviour
     public void Slide()
     {
         if (_isJumping || _isSliding || _gameManager.CurrentState != GameManager.State.Playing || _isDead) return;
-        PlaySound(slideSound);
         _isSliding = true;
         animator?.SetTrigger("Slide");
     }
-
+    public void PlaySlideSound()
+    {
+        PlaySound(slideSound);
+    }
 
     public void MoveLeft() => ChangeLane(-1);
     public void MoveRight() => ChangeLane(1);
