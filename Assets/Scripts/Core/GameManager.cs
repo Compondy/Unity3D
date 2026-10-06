@@ -134,7 +134,7 @@ public class GameManager : MonoBehaviour
         float comboBonus = ComboMultiplier * 2f;
 
         float runScore = timeScore + speedBonus;
-        if (_player.DoubleScoreActive) runScore *= 2f;
+        if (_player.DoubleScoreActive || _player.DoubleScorePurchased) runScore *= 2f;
 
         int gained = Mathf.RoundToInt(runScore + livesBonus + coinBonus + comboBonus);
         Score += gained;

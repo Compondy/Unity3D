@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
 
     public bool MagnetActive { get; set; }
     public bool DoubleScoreActive { get; set; }
+    public bool DoubleScorePurchased { get; private set; }
+    public void LockDoubleScoreForever() => DoubleScorePurchased = true;
     public bool InvincibilityActive { get; set; }
     private CancellationTokenSource _powerupCts;
     private enum PowerupKind { Magnet, DoubleScore, Invincibility }
@@ -56,9 +58,6 @@ public class PlayerController : MonoBehaviour
     public bool IsInvincible => _isInvincible;
 
     private float BaseY => 0.527f;
-
-    private bool _doubleScoreForever;
-    public void LockDoubleScoreForever() => _doubleScoreForever = true;
 
     private void Awake()
     {
@@ -376,10 +375,9 @@ public class PlayerController : MonoBehaviour
         _invincibilityCts?.Dispose(); _invincibilityCts = null;
 
         MagnetActive = false;
-        DoubleScoreActive = false;
         InvincibilityActive = false;
 
-        if (!_doubleScoreForever) DoubleScoreActive = false;
+        if (!DoubleScorePurchased) DoubleScoreActive = false;
     }
     public void ForceStopSlide() => _isSliding = false;
 
