@@ -16,12 +16,7 @@ public class Coin : MonoBehaviour, IPickupable
 
     private void Start()
     {
-        if (_playerController == null) _playerController = FindObjectOfType<PlayerController>();
         _player = _playerController.transform;
-
-        if (_gameManager == null)
-            _gameManager = FindObjectOfType<GameManager>();
-
     }
 
     private void Update()

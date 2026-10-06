@@ -5,6 +5,7 @@ using Zenject;
 public class TrackGenerator : MonoBehaviour
 {
     [Inject] private GameManager _gameManager;
+    [Inject] private DiContainer _container;
 
     [SerializeField] private GameObject menuSegments;
 
@@ -41,28 +42,20 @@ public class TrackGenerator : MonoBehaviour
 
     private void CreatePools()
     {
-        for (int i = 0; i < segmentsCount + 2; i++)
-        {
-            var prefab = segmentPrefabs[Random.Range(0, segmentPrefabs.Length)];
-            var seg = Instantiate(prefab, Vector3.zero, Quaternion.identity);
-            seg.SetActive(false);
-            _segmentPool.Enqueue(seg);
-        }
-
         for (int i = 0; i < PoolSize; i++)
         {
-            var obs = Instantiate(obstaclePrefab);
+            var obs = _container.InstantiatePrefab(obstaclePrefab);
             obs.SetActive(false);
             _obstaclePool.Enqueue(obs);
 
-            var coin = Instantiate(coinPrefab);
+            var coin = _container.InstantiatePrefab(coinPrefab);
             coin.SetActive(false);
             _coinPool.Enqueue(coin);
         }
 
         for (int i = 0; i < PowerupPoolSize; i++)
         {
-            var powerup = Instantiate(powerupPrefab);
+            var powerup = _container.InstantiatePrefab(powerupPrefab);
             powerup.SetActive(false);
             _powerupPool.Enqueue(powerup);
         }

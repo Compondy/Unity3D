@@ -12,14 +12,6 @@ public class Powerup : MonoBehaviour, IPickupable
     [SerializeField] private Type powerupType;
     [SerializeField] private float duration = 5f;
 
-    public void Awake()
-    {
-        if (_gameManager == null)
-            _gameManager = FindObjectOfType<GameManager>();
-        if (_playerController == null)
-            _playerController = FindObjectOfType<PlayerController>();
-    }
-
     public void Collect()
     {
         switch (powerupType)
