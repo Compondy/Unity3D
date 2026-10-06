@@ -174,6 +174,11 @@ public class PlayerController : MonoBehaviour
         PlaySound(slideSound);
     }
 
+    public void PlayCoinSound()
+    {
+        PlaySound(coinSound);
+    }
+
     public void MoveLeft() => ChangeLane(-1);
     public void MoveRight() => ChangeLane(1);
 

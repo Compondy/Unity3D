@@ -28,19 +28,25 @@ public class GameManager : MonoBehaviour
 
     private float _scoreTickTimer;
     private const float ScoreTickInterval = 1f;
-    public void Pause()
+    public void Pause(bool showPausePanel = true)
     {
         if (CurrentState != State.Playing) return;
+
         Time.timeScale = 0f;
         CurrentState = State.Paused;
-        _ui.ShowPause(true);
+
+        if (showPausePanel)
+            _ui.ShowPause(true);
     }
-    public void Resume()
+    public void Resume(bool hidePausePanel = true)
     {
         if (CurrentState != State.Paused) return;
+
         Time.timeScale = 1f;
         CurrentState = State.Playing;
-        _ui.ShowPause(false);
+
+        if (hidePausePanel)
+            _ui.ShowPause(false);
     }
 
     private void Start()

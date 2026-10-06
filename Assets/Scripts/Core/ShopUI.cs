@@ -6,6 +6,7 @@ using Zenject;
 public class ShopUI : MonoBehaviour
 {
     [Inject] private MetaProgress _meta;
+    [Inject] private GameManager _gameManager;
 
     [Header("Panel")]
     [SerializeField] private GameObject shopPanel;
@@ -27,6 +28,9 @@ public class ShopUI : MonoBehaviour
     [Header("Prices")]
     [SerializeField] private int doubleScorePrice = 500;
     [SerializeField] private int nextLevelPrice = 1000;
+    
+    private bool _pausedByShop;
+    public bool IsOpen => shopPanel.activeSelf;
 
     private void Start()
     {
@@ -41,11 +45,30 @@ public class ShopUI : MonoBehaviour
 
     public void Open()
     {
+        if (_gameManager.CurrentState == GameManager.State.Playing)
+        {
+            _gameManager.Pause(showPausePanel: false);
+            _pausedByShop = true;
+        }
+        else
+        {
+            _pausedByShop = false;
+        }
+
         shopPanel.SetActive(true);
         Refresh();
     }
 
-    public void Close() => shopPanel.SetActive(false);
+    public void Close()
+    {
+        shopPanel.SetActive(false);
+
+        if (_pausedByShop)
+        {
+            _gameManager.Resume(hidePausePanel: false);
+            _pausedByShop = false;
+        }
+    }
 
     private void Refresh()
     {

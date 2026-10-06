@@ -136,6 +136,42 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Restart"",
+                    ""type"": ""Button"",
+                    ""id"": ""aac4b158-cd75-4c05-af42-b0ef7324c128"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""DebugPause"",
+                    ""type"": ""Button"",
+                    ""id"": ""2ac14d97-b52f-4936-9cbd-981b638abe6b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""AddCurrency"",
+                    ""type"": ""Button"",
+                    ""id"": ""4181c3a3-7d67-4a07-8436-84fd2fab0138"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenShop"",
+                    ""type"": ""Button"",
+                    ""id"": ""363fe030-5e26-475d-b2ec-593a5783c3ce"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -193,6 +229,50 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7537c2d3-2ebe-45de-a479-6150dd403bd3"",
+                    ""path"": ""<Keyboard>/backquote"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Restart"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5d43606c-e45d-486b-809f-5db09b8193f5"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DebugPause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""432b21b2-68a9-4f18-bb15-392b41a8b2cd"",
+                    ""path"": ""<Keyboard>/f1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AddCurrency"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""139ecd84-dd7f-4866-842a-f1fb304e6fff"",
+                    ""path"": ""<Keyboard>/f2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenShop"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -206,6 +286,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_MoveLeft = m_Player.FindAction("MoveLeft", throwIfNotFound: true);
         m_Player_MoveRight = m_Player.FindAction("MoveRight", throwIfNotFound: true);
         m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
+        m_Player_Restart = m_Player.FindAction("Restart", throwIfNotFound: true);
+        m_Player_DebugPause = m_Player.FindAction("DebugPause", throwIfNotFound: true);
+        m_Player_AddCurrency = m_Player.FindAction("AddCurrency", throwIfNotFound: true);
+        m_Player_OpenShop = m_Player.FindAction("OpenShop", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -291,6 +375,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_MoveLeft;
     private readonly InputAction m_Player_MoveRight;
     private readonly InputAction m_Player_Pause;
+    private readonly InputAction m_Player_Restart;
+    private readonly InputAction m_Player_DebugPause;
+    private readonly InputAction m_Player_AddCurrency;
+    private readonly InputAction m_Player_OpenShop;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -322,6 +410,22 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Pause".
         /// </summary>
         public InputAction @Pause => m_Wrapper.m_Player_Pause;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Restart".
+        /// </summary>
+        public InputAction @Restart => m_Wrapper.m_Player_Restart;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/DebugPause".
+        /// </summary>
+        public InputAction @DebugPause => m_Wrapper.m_Player_DebugPause;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/AddCurrency".
+        /// </summary>
+        public InputAction @AddCurrency => m_Wrapper.m_Player_AddCurrency;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/OpenShop".
+        /// </summary>
+        public InputAction @OpenShop => m_Wrapper.m_Player_OpenShop;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -363,6 +467,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
+            @Restart.started += instance.OnRestart;
+            @Restart.performed += instance.OnRestart;
+            @Restart.canceled += instance.OnRestart;
+            @DebugPause.started += instance.OnDebugPause;
+            @DebugPause.performed += instance.OnDebugPause;
+            @DebugPause.canceled += instance.OnDebugPause;
+            @AddCurrency.started += instance.OnAddCurrency;
+            @AddCurrency.performed += instance.OnAddCurrency;
+            @AddCurrency.canceled += instance.OnAddCurrency;
+            @OpenShop.started += instance.OnOpenShop;
+            @OpenShop.performed += instance.OnOpenShop;
+            @OpenShop.canceled += instance.OnOpenShop;
         }
 
         /// <summary>
@@ -389,6 +505,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
+            @Restart.started -= instance.OnRestart;
+            @Restart.performed -= instance.OnRestart;
+            @Restart.canceled -= instance.OnRestart;
+            @DebugPause.started -= instance.OnDebugPause;
+            @DebugPause.performed -= instance.OnDebugPause;
+            @DebugPause.canceled -= instance.OnDebugPause;
+            @AddCurrency.started -= instance.OnAddCurrency;
+            @AddCurrency.performed -= instance.OnAddCurrency;
+            @AddCurrency.canceled -= instance.OnAddCurrency;
+            @OpenShop.started -= instance.OnOpenShop;
+            @OpenShop.performed -= instance.OnOpenShop;
+            @OpenShop.canceled -= instance.OnOpenShop;
         }
 
         /// <summary>
@@ -464,5 +592,33 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnPause(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Restart" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnRestart(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "DebugPause" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnDebugPause(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "AddCurrency" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAddCurrency(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "OpenShop" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnOpenShop(InputAction.CallbackContext context);
     }
 }
