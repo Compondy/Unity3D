@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public int Lives { get; private set; } = 3;
     public float Speed { get; private set; } = 5f;
     public float RunTime { get; private set; }
+    [Range(1, int.MaxValue)][SerializeField] private int maxComboMultiplier = 10;
     public int ComboMultiplier { get; private set; }
 
     public float MinSpeed = 5f;
@@ -88,15 +89,15 @@ public class GameManager : MonoBehaviour
         CurrentState = State.GameOver;
         _track.StopGeneration();
         _meta.AddToBank(Score);
-        _ui.ShowGameOver(true, Score);
         SaveScore();
+        _ui.ShowGameOver(true, Score);
     }
 
     public void AddScore(int amount) => Score += amount;
     public void AddCoins(int amount)
     {
         Coins += amount;
-        ComboMultiplier += 1;
+        ComboMultiplier = Mathf.Min(ComboMultiplier + 1, maxComboMultiplier);
     }
     public void AddLife(int amount = 1)
     {
@@ -105,12 +106,6 @@ public class GameManager : MonoBehaviour
     public void SetState(State newState)
     {
         CurrentState = newState;
-
-        if (newState == State.Menu)
-        {
-            _player.FullReset();
-        }
-
     }
     public void TakeDamage()
     {
@@ -134,7 +129,7 @@ public class GameManager : MonoBehaviour
         float comboBonus = ComboMultiplier * 2f;
 
         float runScore = timeScore + speedBonus;
-        if (_player.DoubleScoreActive || _player.DoubleScorePurchased) runScore *= 2f;
+        if (_player.DoubleScoreActive || _meta.DoubleScorePurchased) runScore *= 2f;
 
         int gained = Mathf.RoundToInt(runScore + livesBonus + coinBonus + comboBonus);
         Score += gained;

@@ -30,21 +30,65 @@ public class ShopUI : MonoBehaviour
     [SerializeField] private int nextLevelPrice = 1000;
     
     private bool _pausedByShop;
-    public bool IsOpen => shopPanel.activeSelf;
+    private bool _isInitialized = false;
+    public bool IsOpen => shopPanel != null && shopPanel.activeSelf;
 
     private void Start()
     {
+        if (shopPanel == null)
+        {
+            Debug.LogError("[ShopUI] shopPanel is not assigned");
+            return;
+        }
+
+        if (buyDoubleScoreButton == null)
+        {
+            Debug.LogError("[ShopUI] buyDoubleScoreButton is not assigned");
+            return;
+        }
+
+        if (nextLevelButton == null)
+        {
+            Debug.LogError("[ShopUI] nextLevelButton is not assigned");
+            return;
+        }
+
+        if (resetProgressButton == null)
+        {
+            Debug.LogError("[ShopUI] resetProgressButton is not assigned");
+            return;
+        }
+
+        if (closeButton == null)
+        {
+            Debug.LogError("[ShopUI] closeButton is not assigned");
+            return;
+        }
+
         buyDoubleScoreButton.onClick.AddListener(OnBuyDoubleScore);
         nextLevelButton.onClick.AddListener(OnNextLevel);
         resetProgressButton.onClick.AddListener(OnResetProgress);
         closeButton.onClick.AddListener(Close);
 
-        doubleScorePriceText.text = doubleScorePrice.ToString();
-        nextLevelPriceText.text = nextLevelPrice.ToString();
+        if (doubleScorePriceText != null)
+            doubleScorePriceText.text = doubleScorePrice.ToString();
+
+        if (nextLevelPriceText != null)
+            nextLevelPriceText.text = nextLevelPrice.ToString();
+
+        _isInitialized = true;
     }
 
     public void Open()
     {
+        if (!_isInitialized)
+        {
+            Debug.LogError("[ShopUI] Shop is not properly initialized. Check inspector assignments.");
+            return;
+        }
+
+        if (shopPanel == null) { Debug.LogError("[ShopUI] shopPanel is null in Open()"); return; }
+
         if (_gameManager.CurrentState == GameManager.State.Playing)
         {
             _gameManager.Pause(showPausePanel: false);
@@ -61,6 +105,8 @@ public class ShopUI : MonoBehaviour
 
     public void Close()
     {
+        if (shopPanel == null) { Debug.LogWarning("[ShopUI] shopPanel is null in Close()"); return; }
+
         shopPanel.SetActive(false);
 
         if (_pausedByShop)
@@ -72,11 +118,24 @@ public class ShopUI : MonoBehaviour
 
     private void Refresh()
     {
+        if (!bankText) return;
         bankText.text = $"Bank: {_meta.Bank}";
-        levelText.text = $"Level: {_meta.Level}";
 
-        buyDoubleScoreButton.interactable = !_meta.DoubleScorePurchased && _meta.Bank >= doubleScorePrice;
-        nextLevelButton.interactable = _meta.Bank >= nextLevelPrice;
+        if (!levelText) return;
+        int bonusPercent = Mathf.RoundToInt((_meta.BonusDurationMultiplier - 1f) * 100f);
+        int nextBonusPercent = Mathf.RoundToInt(((_meta.BonusDurationMultiplier + 0.2f) - 1f) * 100f);
+
+        string cityUnlockInfo = _meta.Level >= 2
+            ? " | City Zone: Unlocked!"
+            : " | City Zone: Locked (Level 2 required)";
+
+        levelText.text = $"Level: {_meta.Level} (+{bonusPercent}% bonus duration{cityUnlockInfo})\nNext: +{nextBonusPercent}% bonus duration (Unlocks City Zone if Level 2)";
+
+        if (buyDoubleScoreButton != null)
+            buyDoubleScoreButton.interactable = !_meta.DoubleScorePurchased && _meta.Bank >= doubleScorePrice;
+        
+        if (nextLevelButton != null)
+            nextLevelButton.interactable = _meta.Bank >= nextLevelPrice;
 
         statusText.text = _meta.DoubleScorePurchased
             ? "DoubleScore: purchased"
@@ -98,7 +157,8 @@ public class ShopUI : MonoBehaviour
         if (_meta.TrySpend(nextLevelPrice))
         {
             _meta.NextLevel();
-            statusText.text = $"Level up! Now level {_meta.Level}";
+            string extraMsg = _meta.Level >= 2 ? " City Zone unlocked!" : "";
+            statusText.text = $"Level up! Now level {_meta.Level}.{extraMsg}";
         }
         else
             statusText.text = "Not enough score";

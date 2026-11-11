@@ -85,7 +85,6 @@ public class PlayerInputHandler : MonoBehaviour
                 break;
 
             case GameManager.State.Menu:
-                Application.Quit();
                 break;
         }
     }
@@ -110,6 +109,11 @@ public class PlayerInputHandler : MonoBehaviour
             _inputActions.Player.MoveRight.performed -= OnMoveRight;
             _inputActions.Player.Jump.canceled -= OnJumpCanceled;
             _inputActions.Player.Pause.performed -= OnPause;
+            _inputActions.Player.Restart.started -= OnRestartStarted;
+            _inputActions.Player.Restart.canceled -= OnRestartCanceled;
+            _inputActions.Player.DebugPause.performed -= OnDebugPause;
+            _inputActions.Player.AddCurrency.performed -= OnAddCurrency;
+            _inputActions.Player.OpenShop.performed -= OnOpenShop;
             _inputActions.Player.Disable();
             _inputActions.Dispose();
             _inputActions = null;

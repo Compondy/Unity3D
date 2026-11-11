@@ -7,7 +7,7 @@ public interface ISaveService
     bool GetBool(string key, bool defaultValue = false);
     void SetBool(string key, bool value);
     void Save();
-    void DeleteAll();
+    void DeleteKey(string key);
 }
 
 public class SaveService : ISaveService
@@ -25,5 +25,5 @@ public class SaveService : ISaveService
         => PlayerPrefs.SetInt(key, value ? 1 : 0);
 
     public void Save() => PlayerPrefs.Save();
-    public void DeleteAll() => PlayerPrefs.DeleteAll();
+    public void DeleteKey(string key) => PlayerPrefs.DeleteKey(key);
 }

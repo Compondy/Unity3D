@@ -2,15 +2,17 @@ using Zenject;
 
 public class MetaProgress
 {
-    public const string KEY_BANK = "Meta.Bank";            // накопленный Score
-    public const string KEY_LEVEL = "Meta.Level";          // текущий уровень
-    public const string KEY_DOUBLE = "Meta.DoubleScore";   // куплен ли DoubleScore
+    public const string KEY_BANK = "Meta.Bank";
+    public const string KEY_LEVEL = "Meta.Level";
+    public const string KEY_DOUBLE = "Meta.DoubleScore";
 
     private readonly ISaveService _save;
 
     public int Bank { get; private set; }
     public int Level { get; private set; }
     public bool DoubleScorePurchased { get; private set; }
+
+    public float BonusDurationMultiplier => 1f + (Level - 1) * 0.2f;
 
     public MetaProgress(ISaveService save)
     {
@@ -63,7 +65,10 @@ public class MetaProgress
         Bank = 0;
         Level = 1;
         DoubleScorePurchased = false;
-        _save.DeleteAll();
+        _save.DeleteKey(KEY_BANK);
+        _save.DeleteKey(KEY_LEVEL);
+        _save.DeleteKey(KEY_DOUBLE);
+        _save.DeleteKey("HighScore");
         _save.Save();
     }
 }

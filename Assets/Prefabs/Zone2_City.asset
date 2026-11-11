@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75fa9939d242d6c4db3b8d1d19477d17, type: 3}
+  m_Name: Zone2_City
+  m_EditorClassIdentifier: 
+  zoneName: Zone 2 - Twilight City
+  roadMaterial: {fileID: 0}
+  environmentMaterial: {fileID: 0}
+  lightColor: {r: 1, g: 0.55, b: 0.4, a: 1}
+  lightIntensity: 0.85
+  segmentPrefabs:
+  - {fileID: 7098744949163956432, guid: 38f975341dcfdce479e7bc25af7e8844, type: 3}
+  obstaclePrefabs:
+  - type: 3
+    prefab: {fileID: 3260942346915303164, guid: d5dd639cc1621e04abe269b9977c58b6, type: 3}
+  - type: 3
+    prefab: {fileID: 5350895577296118161, guid: 3280fae6413ea3940960ec12fbb31a78, type: 3}
+  - type: 3
+    prefab: {fileID: 4818125359070099241, guid: 073fb08e42b57a943bfeebd3d6a5dd0c, type: 3}
+  obstacleChance: 0.4
+  coinChance: 0.5
+  powerupChance: 0.06

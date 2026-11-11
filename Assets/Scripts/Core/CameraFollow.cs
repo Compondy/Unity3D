@@ -15,6 +15,12 @@ public class CameraFollow : MonoBehaviour
 
     private void Start()
     {
+        if (target == null)
+        {
+            Debug.LogWarning("[CameraFollow] target is not assigned");
+            return;
+        }
+
         _fixedX = 0f;
 
         transform.position = new Vector3(_fixedX, fixedY, target.position.z + offset.z);

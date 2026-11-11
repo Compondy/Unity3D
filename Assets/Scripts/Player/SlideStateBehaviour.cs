@@ -6,8 +6,9 @@ public class SlideStateBehaviour : StateMachineBehaviour
     [SerializeField] private float standHeight = 2f;
 
     private CapsuleCollider _capsule;
+    private float _originalHeight;
+    private Vector3 _originalCenter;
 
-    // Вызывается при входе в состояние
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (_capsule == null)
@@ -15,18 +16,16 @@ public class SlideStateBehaviour : StateMachineBehaviour
 
         if (_capsule != null)
         {
+            _originalHeight = _capsule.height;
+            _originalCenter = _capsule.center;
             _capsule.height = slideHeight;
             _capsule.center = new Vector3(0, slideHeight / 2, 0);
         }
         animator.SetBool("IsSliding", true);
     }
 
-    // Вызывается при выходе из состояния
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (_capsule == null)
-            _capsule = animator.GetComponent<CapsuleCollider>();
-
         if (_capsule != null)
         {
             _capsule.height = standHeight;

@@ -1,9 +1,9 @@
 using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Threading;
-using Unity.VisualScripting;
 using UnityEngine;
 using Zenject;
+using static GameConstants;
 
 public class PlayerController : MonoBehaviour
 {
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
     public bool IsSliding => _isSliding;
     public bool IsInvincible => _isInvincible;
 
-    private float BaseY => 0.527f;
+    private float BaseY => GameConstants.PlayerBaseY;
 
     private void Awake()
     {
@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        _targetPosition = new Vector3(0, BaseY, 0);
+        _targetPosition = new Vector3(0, GameConstants.PlayerBaseY, 0);
         transform.position = _targetPosition;
 
         if (animator == null)
@@ -193,7 +193,7 @@ public class PlayerController : MonoBehaviour
     public void ResetPosition()
     {
         _currentLane = 1;
-        _targetPosition = new Vector3(0, BaseY, 0);
+        _targetPosition = new Vector3(0, GameConstants.PlayerBaseY, 0);
         transform.position = _targetPosition;
         _isJumping = false;
         _isSliding = false;
@@ -201,7 +201,15 @@ public class PlayerController : MonoBehaviour
         _isDead = false;
 
         if (playerCollider != null)
+        {
             playerCollider.transform.localScale = Vector3.one;
+            CapsuleCollider capsule = playerCollider as CapsuleCollider;
+            if (capsule != null)
+            {
+                capsule.height = 2f;
+                capsule.center = new Vector3(0, 0.7f, 0);
+            }
+        }
 
         if (_material != null)
             _material.color = _originalColor;
@@ -252,6 +260,7 @@ public class PlayerController : MonoBehaviour
     {
         _isDead = true;
         CancelAllPowerups();
+        StopAllCoroutines();
         _musicManager.StopMusic();
         PlaySound(deathSound);
         _gameManager.GameOver();
@@ -271,7 +280,7 @@ public class PlayerController : MonoBehaviour
         CancelAllPowerups();
 
         _currentLane = 1;
-        _targetPosition = new Vector3(0, BaseY, 0);
+        _targetPosition = new Vector3(0, GameConstants.PlayerBaseY, 0);
         transform.position = _targetPosition;
 
         _isJumping = false;
@@ -281,7 +290,15 @@ public class PlayerController : MonoBehaviour
         _jumpProgress = 0;
 
         if (playerCollider != null)
+        {
             playerCollider.transform.localScale = Vector3.one;
+            CapsuleCollider capsule = playerCollider as CapsuleCollider;
+            if (capsule != null)
+            {
+                capsule.height = 2f;
+                capsule.center = new Vector3(0, 0.7f, 0);
+            }
+        }
 
         if (_material != null)
             _material.color = _originalColor;
@@ -317,7 +334,7 @@ public class PlayerController : MonoBehaviour
         {
             if (_material != null)
                 _material.color = timer % 0.3f < 0.15f ? Color.red : _originalColor;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSecondsRealtime(0.1f);
             timer += 0.1f;
         }
 

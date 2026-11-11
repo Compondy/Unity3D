@@ -16,6 +16,13 @@ public class Coin : MonoBehaviour, IPickupable
 
     private void Start()
     {
+        if (_playerController == null)
+        {
+            Debug.LogError("[Coin] _playerController is not assigned");
+            enabled = false;
+            return;
+        }
+
         _player = _playerController.transform;
     }
 
@@ -24,22 +31,22 @@ public class Coin : MonoBehaviour, IPickupable
         transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
 
         if (_isCollected) return;
+        if (_playerController == null || _player == null) return;
 
-        if (_playerController.MagnetActive && _player != null)
+        if (!_playerController.MagnetActive) return;
+
+        float distance = Vector3.Distance(transform.position, _player.position);
+
+        if (distance < magnetRange)
         {
-            float distance = Vector3.Distance(transform.position, _player.position);
+            Vector3 targetPosition = new Vector3(_player.position.x, transform.position.y, _player.position.z);
 
-            if (distance < magnetRange)
+            Vector3 direction = (targetPosition - transform.position).normalized;
+            transform.position += direction * magnetSpeed * Time.deltaTime;
+
+            if (distance < 0.5f)
             {
-                Vector3 targetPosition = new Vector3(_player.position.x,transform.position.y, _player.position.z);
-
-                Vector3 direction = (targetPosition - transform.position).normalized;
-                transform.position += direction * magnetSpeed * Time.deltaTime;
-
-                if (distance < 0.5f)
-                {
-                    Collect();
-                }
+                Collect();
             }
         }
     }

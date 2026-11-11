@@ -1082,6 +1082,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &302774413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302774414}
+  m_Layer: 0
+  m_Name: PoolRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &302774414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302774413}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1269.4623, y: 517.99365, z: -21.457275}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &375850560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,8 +1343,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -136}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 0, y: -200}
+  m_SizeDelta: {x: 1200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &387896444
 MonoBehaviour:
@@ -1446,8 +1477,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 132, y: -258}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 250, y: -350}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &446481311
 MonoBehaviour:
@@ -1593,11 +1624,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuSegments: {fileID: 1768457748}
+  zones:
+  - {fileID: 11400000, guid: af8fc9c97dac2e441965d36009ecb65c, type: 2}
+  - {fileID: 11400000, guid: c5cc8de78d9b1104f879bc4758fa1ecd, type: 2}
+  segmentsPerZone: 8
+  mainDirectionalLight: {fileID: 1902034893}
   segmentPrefabs:
   - {fileID: 1927023512922912880, guid: ef8398c1df5308945a95c3e8b390f2f0, type: 3}
   obstaclePrefab: {fileID: 6224885028393143073, guid: c9c29b111df1d1343b1cfc79e19bae43, type: 3}
   coinPrefab: {fileID: 739815702633616313, guid: 27f2280bc6ca4ca44bcaaa4bddd6300c, type: 3}
   powerupPrefab: {fileID: 5433402407907296184, guid: 18505d43ce0f9004196d0067baec52ad, type: 3}
+  poolRoot: {fileID: 302774414}
   segmentsCount: 16
   laneOffset: 1.5
   obstacleChance: 0.3
@@ -1820,7 +1857,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -70}
-  m_SizeDelta: {x: 400, y: 50}
+  m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &551299284
 MonoBehaviour:
@@ -2355,7 +2392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 112, y: -314}
+  m_AnchoredPosition: {x: 112, y: -400}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &616265070
@@ -2705,7 +2742,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -400}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &861120771
 GameObject:
@@ -3911,7 +3948,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90, y: -194}
+  m_AnchoredPosition: {x: -90, y: -300}
   m_SizeDelta: {x: 220, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1215732917
@@ -4032,7 +4069,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90, y: -255}
+  m_AnchoredPosition: {x: -90, y: -350}
   m_SizeDelta: {x: 220, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1220738739
@@ -4130,6 +4167,7 @@ GameObject:
   - component: {fileID: 1231898416}
   - component: {fileID: 1231898415}
   - component: {fileID: 1231898414}
+  - component: {fileID: 1231898419}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4246,6 +4284,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1231898419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231898413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97572b72d19440e4eba53f26c2369de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopPanel: {fileID: 1728775735}
+  bankText: {fileID: 551299284}
+  levelText: {fileID: 387896444}
+  statusText: {fileID: 1469250047}
+  buyDoubleScoreButton: {fileID: 1215732917}
+  doubleScorePriceText: {fileID: 1336871746}
+  nextLevelButton: {fileID: 1220738739}
+  nextLevelPriceText: {fileID: 446481311}
+  resetProgressButton: {fileID: 1276735105}
+  closeButton: {fileID: 616265070}
+  doubleScorePrice: 500
+  nextLevelPrice: 1000
 --- !u!1 &1257974574 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f3157a406eb15b4589e29370e4bee74, type: 3}
@@ -4475,7 +4537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90, y: -313}
+  m_AnchoredPosition: {x: -90, y: -400}
   m_SizeDelta: {x: 220, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276735105
@@ -4728,8 +4790,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 131, y: -200}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 250, y: -300}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1336871746
 MonoBehaviour:
@@ -5008,7 +5070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -367}
+  m_AnchoredPosition: {x: 0, y: -450}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1469250047
@@ -5143,7 +5205,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1474247924
 MonoBehaviour:
@@ -6080,7 +6142,6 @@ GameObject:
   - component: {fileID: 1728775736}
   - component: {fileID: 1728775738}
   - component: {fileID: 1728775737}
-  - component: {fileID: 1728775739}
   m_Layer: 5
   m_Name: ShopPanel
   m_TagString: Untagged
@@ -6155,30 +6216,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728775735}
   m_CullTransparentMesh: 1
---- !u!114 &1728775739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728775735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97572b72d19440e4eba53f26c2369de2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shopPanel: {fileID: 1728775735}
-  bankText: {fileID: 551299284}
-  levelText: {fileID: 387896444}
-  statusText: {fileID: 1469250047}
-  buyDoubleScoreButton: {fileID: 1215732917}
-  doubleScorePriceText: {fileID: 1336871746}
-  nextLevelButton: {fileID: 1220738739}
-  nextLevelPriceText: {fileID: 446481311}
-  resetProgressButton: {fileID: 1276735105}
-  closeButton: {fileID: 616265070}
-  doubleScorePrice: 500
-  nextLevelPrice: 1000
 --- !u!1 &1748358140
 GameObject:
   m_ObjectHideFlags: 0
@@ -6302,6 +6339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 298b6e004150f9147a69d1a481e13283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxComboMultiplier: 1
   MinSpeed: 5
   MaxSpeed: 12
   Acceleration: 0.2
@@ -6376,7 +6414,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1897017691
 CanvasRenderer:
@@ -7189,7 +7227,7 @@ MonoBehaviour:
   trackGenerator: {fileID: 480420472}
   uiManager: {fileID: 1231898414}
   musicManager: {fileID: 217806199}
-  shopUI: {fileID: 1728775739}
+  shopUI: {fileID: 1231898419}
 --- !u!114 &2110463497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7428,3 +7466,4 @@ SceneRoots:
   - {fileID: 1502102583}
   - {fileID: 1768457749}
   - {fileID: 1385460824}
+  - {fileID: 302774414}

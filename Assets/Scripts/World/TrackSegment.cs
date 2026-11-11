@@ -9,6 +9,8 @@ public class TrackSegment : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float worldLength = 27f;
 
+    public int ZoneIndex { get; set; }
+
     public List<GameObject> coinsInSegment = new List<GameObject>();
     public List<GameObject> obstaclesInSegment = new List<GameObject>();
     public List<GameObject> powerupsInSegment = new List<GameObject>();

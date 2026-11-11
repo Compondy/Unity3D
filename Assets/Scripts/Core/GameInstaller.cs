@@ -1,4 +1,3 @@
-using System.ComponentModel;
 using UnityEngine;
 using Zenject;
 
@@ -22,5 +21,7 @@ public class GameInstaller : MonoInstaller
         Container.Bind<UIManager>().FromInstance(uiManager).AsSingle();
         Container.Bind<MusicManager>().FromInstance(musicManager).AsSingle();
         Container.Bind<ShopUI>().FromInstance(shopUI).AsSingle();
+
+        Container.BindFactory<ObstacleType, int, int, Obstacle, Obstacle.Factory>().FromFactory<ObstacleFactory>();
     }
 }

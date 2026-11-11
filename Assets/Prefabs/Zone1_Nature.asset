@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75fa9939d242d6c4db3b8d1d19477d17, type: 3}
+  m_Name: Zone1_Nature
+  m_EditorClassIdentifier: 
+  zoneName: Zone 1 - Forest Island
+  roadMaterial: {fileID: 0}
+  environmentMaterial: {fileID: 0}
+  lightColor: {r: 1, g: 0.96, b: 0.84, a: 1}
+  lightIntensity: 1.2
+  segmentPrefabs:
+  - {fileID: 1927023512922912880, guid: ef8398c1df5308945a95c3e8b390f2f0, type: 3}
+  obstaclePrefabs:
+  - type: 0
+    prefab: {fileID: 6224885028393143073, guid: c9c29b111df1d1343b1cfc79e19bae43, type: 3}
+  - type: 1
+    prefab: {fileID: 8797189751690487000, guid: ce96f36156afb2a49a2c2d481c59cff4, type: 3}
+  - type: 2
+    prefab: {fileID: 7336606398923230917, guid: 7ee2350db1affce448749e63cb088938, type: 3}
+  obstacleChance: 0.35
+  coinChance: 0.5
+  powerupChance: 0.05
